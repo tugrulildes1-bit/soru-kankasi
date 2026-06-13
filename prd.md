@@ -34,6 +34,7 @@ Uygulama arayüzü, merkezi bir müfredat veri kaynağından (`curriculum.js`) b
 - **Akış:** Sınıf Seçimi → Ders Seçimi → Konu Seçimi → Soru Sayısı → Soruları Oluştur.
 - **MVP Kısıtı ve UI Tasarımı:** MVP'de yalnızca "2. Sınıf" ve "Matematik" desteklenecektir. Sınıf ve Ders seçenekleri sabit/ön-seçili olduğundan, kullanıcı ilk ekranda yalnızca **Konu** ve **Soru Sayısı** seçimlerini yapacaktır.
 - **Genişletilebilirlik:** İleride veri dosyasına yeni sınıf (1, 3, 4) veya dersler (Türkçe vb.) eklendiğinde arayüz koduna dokunulmadan sistem otomatik olarak yeni seçim alanlarını açacaktır.
+- **İstek Güvenliği:** Kullanıcı "Soruları Oluştur" butonuna bastığında, mükerrer isteklerin önlenmesi için buton geçici olarak devre dışı bırakılacak ve çocuk dostu bir **Yükleniyor (Loading) Ekranı** gösterilecektir.
 
 ### 4.2. Yapay Zekâ Destekli Soru Üretimi (Gemini API)
 - **Soru Tipi:** Yalnızca 4 şıklı çoktan seçmeli (A, B, C, D) sorular üretilir.
@@ -45,8 +46,9 @@ Uygulama arayüzü, merkezi bir müfredat veri kaynağından (`curriculum.js`) b
   - Hikâyeleştirilmiş problemler üretilir. Türkiye'de yaygın kullanılan isimler tercih edilir (Ali, Ayşe, Ahmet, Elif, Zeynep, Mehmet vb.).
   - Her sorunun tek bir doğru cevabı olur, seçenek uzunlukları birbirine yakın tutulur.
   - Benzer soruların tek bir testte tekrarlanması önlenir.
-- **Güvenilirlik (Retry Mekanizması):**
-  - AI'dan gelen JSON verisi hatalıysa sistem kullanıcıya fark ettirmeden otomatik olarak arka planda yeniden deneme (retry) yapar.
+- **Güvenilirlik, Doğrulama ve Yeniden Deneme (Retry):**
+  - AI'dan gelen veriler sıkı bir doğrulama katmanından geçirilir: Her soru için tam 4 şık olması, tek doğru cevap olması, Türkçe karakterlerin/metnin bozulmamış olması, 2. sınıf dil düzeyine ve pedagojik kurallara uygunluğu denetlenir.
+  - Eğer bu kontrollerden biri başarısız olursa veya JSON hatalıysa, sistem kullanıcıya fark ettirmeden otomatik olarak arka planda yeniden deneme (retry) yapar.
 
 ### 4.3. Cevaplama Deneyimi ve Geribildirim
 - Öğrenci bir soruyu **yalnızca bir kez** cevaplayabilir.
@@ -57,7 +59,7 @@ Uygulama arayüzü, merkezi bir müfredat veri kaynağından (`curriculum.js`) b
 
 ### 4.4. Görsel ve Erişilebilirlik Standartları
 - Arayüz çocuk dostudur: Canlı fakat göz yormayan pastel renkler ve büyük tıklama alanları.
-- Font boyutları minimum **18-20px** olarak ayarlanır.
+- Font boyutları minimum **18-20px** olarak ayarlanir.
 - Mobil ve tablet uyumlu (responsive) tasarım.
 
 ### 4.5. Test Sonu Ekranı

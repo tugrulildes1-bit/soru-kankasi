@@ -21,12 +21,18 @@ Bu dosya, ilkokul 2. sınıf düzeyinde Matematik dersi için geliştirilecek AI
 
 ### Aşama 3: Soru Üretim Motoru & Hata Yönetimi
 - [ ] Gemini API entegrasyonunun yapılması ve adaptör yapısının bağlanması
-- [ ] **Arka Plan Yeniden Deneme (Retry) Mekanizması:** Gemini'den gelen JSON verisi geçersiz veya hatalıysa, kullanıcıya yansıtmadan arka planda isteği yeniden gönderen döngünün kurulması (ortalama yanıt süresi <30 sn hedefiyle)
+- [ ] **Ek Doğrulama (Validation) Katmanı:**
+  - Gelen her soruda tam olarak 4 seçenek (options) olduğunu doğrulama
+  - Seçeneklerin içinde tam olarak 1 adet doğru cevap (correctAnswer) olduğunu ve bu anahtarın şıklarda bulunduğunu doğrulama
+  - Türkçe metin karakter kodlamasının bozulmadığını kontrol etme
+  - 2. sınıf seviyesine uygun pedagojik dil kurallarını basit kelime filtreleriyle denetleme
+- [ ] **Arka Plan Yeniden Deneme (Retry) Mekanizması:** Gemini'den gelen JSON verisi geçersizse VEYA yukardaki doğrulama kontrollerinden biri başarısız olursa, kullanıcıya yansıtmadan arka planda en fazla 3 kez yeniden deneme (retry) yapılması
 
 ### Aşama 4: Dinamik Kullanıcı Arayüzü (UI) ve Akış
 - [ ] **Seçim Ekranı (`selector.js`):**
   - Sınıf (2. Sınıf) ve Ders (Matematik) seçeneklerinin pre-selected/sabit gösterilmesi
   - Konu ve Soru Sayısı dropdown'larının `curriculum.js` verisine göre dinamik doldurulması
+  - **Mükerrer İstek Engelleme:** Butona tıklandığı anda butonun `disabled` yapılması ve yükleniyor ekranının (Loading Screen) gösterilmesi
 - [ ] **Soru Çözüm Kartları (`quiz.js`):**
   - Soruların tek tek gösterilmesi
   - Şık işaretlendiğinde tek cevap hakkı kısıtlaması (kilitlenme)
@@ -40,11 +46,3 @@ Bu dosya, ilkokul 2. sınıf düzeyinde Matematik dersi için geliştirilecek AI
 - [ ] API yanıt süresinin <30 saniye olduğunun test edilmesi
 - [ ] Mobil ve tablet arayüz kontrollerinin yapılması
 - [ ] **Genişletilebilirlik Testi:** `curriculum.js` dosyasına geçici veri eklenerek UI'ın dinamik olarak yeni seçeneği yansıttığının doğrulanması
-
----
-
-## 🚀 MVP Dışında Kalan (Sonraki Faz) Özellikler
-- **Diğer Dersler ve Sınıflar:** 1, 3, 4. sınıflar ve Türkçe dersi kazanımları.
-- **Gelişmiş Soru Tipleri:** Doğru-yanlış, boşluk doldurma ve kısa cevaplı sorular.
-- **Yerel Depolama (LocalStorage) veya Bulut Veritabanı:** Kullanıcı kaydı, test geçmişi ve veli/öğretmen takip paneli.
-- **Sesli Okuma (Text-to-Speech):** Soruların seslendirilmesi.
