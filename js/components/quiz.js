@@ -39,9 +39,6 @@ export class QuizComponent {
       <div class="card quiz-card">
         <div class="quiz-header">
           <span class="progress-text">Soru ${this.state.currentIndex + 1} / ${this.questions.length}</span>
-          <span class="difficulty-badge ${question.difficulty}">
-            ${difficultyLabels[question.difficulty] || question.difficulty}
-          </span>
         </div>
 
         <h2 class="question-text">${question.questionText}</h2>

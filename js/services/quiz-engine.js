@@ -108,13 +108,12 @@ const MOCK_QUESTIONS_LIBRARY = {
  * @returns {object}
  */
 function generateDynamicMockQuestion(topicKey, difficulty, index) {
-  const diffNames = { easy: "Kolay", medium: "Orta", hard: "Zor" };
   const val1 = (index + 1) * 5;
   const val2 = (index + 1) * 3;
   const correctVal = val1 + val2;
 
   return {
-    questionText: `[${diffNames[difficulty]} Soru - ${index + 1}] Ahmet'in marketten aldığı ${val1} elması vardı. Ayşe ona ${val2} elma daha verdi. Ahmet'in toplam kaç elması oldu?`,
+    questionText: `Ahmet'in ${val1} elması vardı. Ayşe ona ${val2} elma daha verdi. Ahmet'in toplam kaç elması oldu?`,
     options: {
       A: `${correctVal - 2}`,
       B: `${correctVal}`,

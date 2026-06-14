@@ -21,19 +21,28 @@ export class ScoreComponent {
     // Başarı oranına göre özel motive edici mesajlar
     let message = '';
     let emojiClass = '';
+    let starCount = 1;
     
     if (ratio >= 90) {
       message = "Harika! Sen bu konuyu gerçekten öğrenmiş görünüyorsun! 🌟";
       emojiClass = "success-high";
+      starCount = 5;
     } else if (ratio >= 70) {
       message = "Çok iyi gidiyorsun! Biraz daha pratikle daha da güçleneceksin. 💪";
       emojiClass = "success-medium";
+      starCount = 4;
     } else if (ratio >= 50) {
       message = "Güzel bir başlangıç! Birkaç soru daha çözerek kendini geliştirebilirsin. 😊";
       emojiClass = "success-low";
+      starCount = 3;
+    } else if (ratio >= 30) {
+      message = "Hiç sorun değil! Hatalar öğrenmenin bir parçasıdır. Birlikte tekrar deneyebiliriz. 🌈";
+      emojiClass = "success-fail";
+      starCount = 2;
     } else {
       message = "Hiç sorun değil! Hatalar öğrenmenin bir parçasıdır. Birlikte tekrar deneyebiliriz. 🌈";
       emojiClass = "success-fail";
+      starCount = 1;
     }
 
     this.container.innerHTML = `
@@ -42,6 +51,9 @@ export class ScoreComponent {
           <div class="score-badge-circle">
             <span class="score-correct-num">${correctCount} Doğru</span>
             <span class="score-total-num">${total} Soru</span>
+          </div>
+          <div class="score-stars" style="font-size: 2.5rem; margin-bottom: 12px; letter-spacing: 4px;">
+            ${'⭐'.repeat(starCount)}
           </div>
           <h2 class="score-title">Test Sonucu</h2>
           <p class="score-message">${message}</p>
@@ -56,7 +68,7 @@ export class ScoreComponent {
             return `
               <div class="score-question-card ${isUserCorrect ? 'correct' : 'incorrect'}">
                 <div class="score-question-title">
-                  ${idx + 1}. Soru [${q.difficulty === 'easy' ? 'Kolay' : q.difficulty === 'medium' ? 'Orta' : 'Zor'}]
+                  ${idx + 1}. Soru
                   ${isUserCorrect ? '✅ Doğru' : '❌ Yanlış'}
                 </div>
                 <div class="score-question-text">${q.questionText}</div>
