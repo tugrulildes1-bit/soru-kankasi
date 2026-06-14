@@ -132,12 +132,28 @@ export const QuizEngine = {
    * @param {object} selection - { grade, subject, topic, count }
    * @returns {Promise<Array>} - Kolaydan zora sıralanmış soru nesneleri dizisi
    */
-  getQuestions(selection) {
-    return new Promise((resolve) => {
+    async getQuestions(selection) {
+      try {
+  const response = await fetch("http://localhost:3000/generate-question", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(selection)
+  });
+
+  const data = await response.json();
+
+  console.log("🤖 Gemini cevabı:", data);
+
+} catch (error) {
+  console.error("Gemini bağlantı hatası:", error);
+}
+      return new Promise((resolve) => {
       // 1.5 saniyelik sahte gecikme ekleyerek AI bekleme hissi yaratıyoruz
       setTimeout(() => {
         const { topic, count } = selection;
-        
+
         // Zorluk sayılarını hesapla: %20 Kolay, %50 Orta, %30 Zor
         const easyCount = Math.round(count * 0.20);
         const hardCount = Math.round(count * 0.30);
@@ -145,7 +161,7 @@ export const QuizEngine = {
 
         // İlgili konudan veya dinamik üreteçten soruları al
         const sourceQuestions = MOCK_QUESTIONS_LIBRARY[topic] || [];
-        
+
         const easyPool = sourceQuestions.filter(q => q.difficulty === 'easy');
         const mediumPool = sourceQuestions.filter(q => q.difficulty === 'medium');
         const hardPool = sourceQuestions.filter(q => q.difficulty === 'hard');
