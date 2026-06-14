@@ -133,75 +133,33 @@ export const QuizEngine = {
    * @returns {Promise<Array>} - Kolaydan zora sıralanmış soru nesneleri dizisi
    */
     async getQuestions(selection) {
-      try {
-  const response = await fetch("http://localhost:3000/generate-question", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(selection)
-  });
+    try {
+        const response = await fetch("http://localhost:3000/generate-question", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(selection)
+        });
 
-  const data = await response.json();
+        const data = await response.json();
 
-  console.log("🤖 Gemini cevabı:", data);
+        console.log("🤖 Gemini cevabı:", data);
 
-} catch (error) {
-  console.error("Gemini bağlantı hatası:", error);
-}
-      return new Promise((resolve) => {
-      // 1.5 saniyelik sahte gecikme ekleyerek AI bekleme hissi yaratıyoruz
-      setTimeout(() => {
-        const { topic, count } = selection;
+        const cleaned = data.text
+            .replace("```json", "")
+            .replace("```", "")
+            .trim();
 
-        // Zorluk sayılarını hesapla: %20 Kolay, %50 Orta, %30 Zor
-        const easyCount = Math.round(count * 0.20);
-        const hardCount = Math.round(count * 0.30);
-        const mediumCount = count - easyCount - hardCount;
+        const geminiQuestions = JSON.parse(cleaned);
 
-        // İlgili konudan veya dinamik üreteçten soruları al
-        const sourceQuestions = MOCK_QUESTIONS_LIBRARY[topic] || [];
+        console.log("✅ Parse edilen sorular:", geminiQuestions);
 
-        const easyPool = sourceQuestions.filter(q => q.difficulty === 'easy');
-        const mediumPool = sourceQuestions.filter(q => q.difficulty === 'medium');
-        const hardPool = sourceQuestions.filter(q => q.difficulty === 'hard');
+        return geminiQuestions;
 
-        const selectedQuestions = [];
-
-        // Kolay soruları seç veya üret
-        for (let i = 0; i < easyCount; i++) {
-          if (easyPool[i]) {
-            selectedQuestions.push(easyPool[i]);
-          } else {
-            selectedQuestions.push(generateDynamicMockQuestion(topic, 'easy', i));
-          }
-        }
-
-        // Orta soruları seç veya üret
-        for (let i = 0; i < mediumCount; i++) {
-          if (mediumPool[i]) {
-            selectedQuestions.push(mediumPool[i]);
-          } else {
-            selectedQuestions.push(generateDynamicMockQuestion(topic, 'medium', i));
-          }
-        }
-
-        // Zor soruları seç veya üret
-        for (let i = 0; i < hardCount; i++) {
-          if (hardPool[i]) {
-            selectedQuestions.push(hardPool[i]);
-          } else {
-            selectedQuestions.push(generateDynamicMockQuestion(topic, 'hard', i));
-          }
-        }
-
-        // Pedagojik olarak kolaydan zora sırala
-        // (Zaten ekleme sıramız kolay -> orta -> zor olduğu için dizilimi korur, ama garantiye alıyoruz)
-        const difficultyWeight = { easy: 1, medium: 2, hard: 3 };
-        selectedQuestions.sort((a, b) => difficultyWeight[a.difficulty] - difficultyWeight[b.difficulty]);
-
-        resolve(selectedQuestions);
-      }, 1200);
-    });
+    } catch (error) {
+        console.error("Gemini bağlantı hatası:", error);
+        throw error;
+    }
   }
 };

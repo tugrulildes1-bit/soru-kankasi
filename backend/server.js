@@ -16,22 +16,50 @@ const ai = new GoogleGenAI({
 
 app.post("/generate-question", async (req, res) => {
   try {
+const { topic, count } = req.body;
+
 const prompt = `
-MEB 2. sınıf matematik düzeyinde,
-4 şıklı,
-günlük hayattan,
-Türk isimleri kullanılan,
-tek doğru cevabı olan,
-hikayeli bir toplama problemi üret
+Türkiye'de yaşayan 2. sınıf öğrencileri için,
+MEB müfredatına uygun ${count} adet ${topic} konusu sorusu üret.
 
-JSON formatında cevap ver:
+Kurallar:
+- Sorular günlük hayattan olsun.
+- Türk isimleri kullan.
+- 4 şıklı çoktan seçmeli olsun.
+- %20 kolay, %50 orta, %30 zor dağılımı olsun.
+- Çocuk dostu dil kullan.
+- Aynı soru kalıbını tekrar etme.
+- Her soru için kısa çözüm açıklaması yaz.
 
-{
-"question": "...",
-"options": ["A", "B", "C", "D"],
-"correctAnswer": "A",
-"explanation": "..."
-}
+Sadece GEÇERLİ JSON döndür.
+Markdown kullanma.
+Açıklama ekleme.
+
+Tam olarak ${count} adet soru içeren JSON ARRAY döndür.
+
+ÖRNEK ÇIKTI:
+
+[
+  {
+    "questionText": "...",
+    "options": {
+      "A": "...",
+      "B": "...",
+      "C": "...",
+      "D": "..."
+    },
+    "correctAnswer": "A",
+    "explanation": "..."
+  }
+]
+
+JSON dizisinin uzunluğu mutlaka ${count} olmalıdır.
+Her soru nesnesinde şu alanlar bulunmalıdır:
+- questionText
+- options
+- correctAnswer
+- explanation
+
 `;
 
     const response = await ai.models.generateContent({
@@ -40,8 +68,9 @@ JSON formatında cevap ver:
     });
 
     res.json({
-      text: response.text,
-    });
+  text: response.text,
+  raw: response
+});
   } catch (error) {
     console.error(error);
 
