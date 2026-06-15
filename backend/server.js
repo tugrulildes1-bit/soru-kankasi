@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const { GoogleGenAI } = require("@google/genai");
+const { CURRICULUM } = require("../js/curriculum.js");
 
 dotenv.config();
 
@@ -30,13 +31,26 @@ function validateQuestion(question) {
 }
 app.post("/generate-question", async (req, res) => {
   try {
-const { topic, count } = req.body;
+const { grade, subject, topic, count } = req.body;
+const topicData =
+  CURRICULUM.grades[grade]
+    .subjects[subject]
+    .topics[topic];
+    const outcomesText = topicData.outcomes.join("\n- ");
+
+const hintsText = topicData.promptHints.join("\n- ");
 
 const prompt = `
-Türkiye'de yaşayan 2. sınıf öğrencileri için,
-MEB müfredatına uygun ${count} adet ${topic} konusu sorusu üret.
+Türkiye'de yaşayan ${grade}. sınıf öğrencileri için,
+MEB müfredatına uygun ${count} adet "${topicData.name}" konusu sorusu üret.
 
-Kurallar:
+Bu konuya ait kazanımlar:
+- ${outcomesText}
+
+Bu konu için dikkat edilmesi gereken kurallar:
+- ${hintsText}
+
+Genel kurallar:
 - Sorular günlük hayattan olsun.
 - Türk isimleri kullan.
 - 4 şıklı çoktan seçmeli olsun.
@@ -107,29 +121,44 @@ Kurallar:
 
 `;
 let validQuestions = null;
-    const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
-      contents: prompt,
-    });
+    for (let attempt = 1; attempt <= 3; attempt++) {
+  console.log(`Deneme ${attempt}/3`);
 
-   const cleaned = response.text
-  .replace(/```json/g, "")
-  .replace(/```/g, "")
-  .trim();
+  const response = await ai.models.generateContent({
+    model: "gemini-2.5-flash",
+    contents: prompt,
+  });
 
-console.log("TEMİZLENMİŞ JSON:");
-console.log(cleaned);
+  const cleaned = response.text
+    .replace(/```json/g, "")
+    .replace(/```/g, "")
+    .trim();
 
-const questions = JSON.parse(cleaned);
+  const questions = JSON.parse(cleaned);
+console.log(
+  JSON.stringify(questions, null, 2)
+);
+  const allValid = questions.every(validateQuestion);
 
-const allValid = questions.every(validateQuestion);
+  console.log("Validator sonucu:", allValid);
 
-console.log("Validator sonucu:", allValid);
+  if (allValid) {
+    validQuestions = questions;
+    break;
+  }
+
+  console.log("Sorular hatalı bulundu. Yeniden üretiliyor...");
+}
+if (!validQuestions) {
+  return res.status(500).json({
+    error: "Geçerli soru seti üretilemedi.",
+  });
+}
 
 res.json({
-  text: response.text,
-  raw: response
+  questions: validQuestions,
 });
+
   } catch (error) {
     console.error(error);
 

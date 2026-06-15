@@ -27,6 +27,14 @@ export const CURRICULUM = {
             },
             "toplama-islemi": {
               name: "Toplama İşlemi",
+              validatorType: "addition",
+
+promptHints: [
+  "Günlük hayat problemleri kullan.",
+  "Türk isimleri kullan.",
+  "İki basamaklı sayılar kullan.",
+  "2. sınıf seviyesini aşma."
+],
               outcomes: [
                 "Toplamları 100'e kadar olan doğal sayılarla eldesiz ve eldeli toplama işlemini yapar.",
                 "İki sayının toplamını tahmin eder ve tahminini işlem sonucuyla karşılaştırır.",
@@ -36,6 +44,15 @@ export const CURRICULUM = {
             },
             "cikarma-islemi": {
               name: "Çıkarma İşlemi",
+              validatorType: "subtraction",
+
+promptHints: [
+  "Günlük hayat problemleri kullan.",
+  "Türk isimleri kullan.",
+  "İki basamaklı sayılar kullan.",
+  "Verme, eksilme ve azalma senaryoları kullan.",
+  "2. sınıf seviyesini aşma."
+],
               outcomes: [
                 "100'e kadar olan doğal sayılarla onluk bozmayı gerektiren ve gerektirmeyen çıkarma işlemini yapar.",
                 "Doğal sayılarla yapılan çıkarma işleminin sonucunu tahmin eder ve tahminini işlem sonucuyla karşılaştırır.",
@@ -45,6 +62,16 @@ export const CURRICULUM = {
             },
             "carpma-islemi": {
               name: "Çarpma İşlemi",
+              validatorType: "multiplication",
+
+promptHints: [
+  "Çarpma işlemini tekrarlı toplama mantığıyla ilişkilendir.",
+  "Günlük hayat problemleri kullan.",
+  "Türk isimleri kullan.",
+  "Eşit gruplar oluşturma senaryoları kullan.",
+  "Tabaklar, kutular, sıralar ve gruplar gibi örnekler tercih et.",
+  "2. sınıf seviyesini aşma."
+],
               outcomes: [
                 "Çarpma işleminin tekrarlı toplama anlamına geldiğini açıklar.",
                 "Doğal sayılarla çarpma işlemini yapar (5'e kadar olan sayılarla ritmik sayma temelinde).",
@@ -53,6 +80,16 @@ export const CURRICULUM = {
             },
             "bolme-islemi": {
               name: "Bölme İşlemi",
+              validatorType: "division",
+
+promptHints: [
+  "Bölme işlemini eşit paylaşma ve gruplama mantığıyla ilişkilendir.",
+  "Günlük hayat problemleri kullan.",
+  "Türk isimleri kullan.",
+  "Şeker, elma, oyuncak gibi somut nesneler kullan.",
+  "Çocukların paylaşabileceği senaryolar kur.",
+  "2. sınıf seviyesini aşma."
+],
               outcomes: [
                 "Bölme işleminde gruplama ve paylaştırma anlamlarını fark eder.",
                 "Bölme işlemini yapar, bölme işaretini (/) kullanır.",

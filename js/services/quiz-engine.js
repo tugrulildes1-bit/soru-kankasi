@@ -146,16 +146,9 @@ export const QuizEngine = {
 
         console.log("🤖 Gemini cevabı:", data);
 
-        const cleaned = data.text
-            .replace("```json", "")
-            .replace("```", "")
-            .trim();
+        console.log("✅ Backend cevabı:", data);
 
-        const geminiQuestions = JSON.parse(cleaned);
-
-        console.log("✅ Parse edilen sorular:", geminiQuestions);
-
-        return geminiQuestions;
+return data.questions;
 
     } catch (error) {
         console.error("Gemini bağlantı hatası:", error);
