@@ -106,13 +106,21 @@ Kurallar:
   "explanation": "16 ile 7 toplanır ve 23 bulunur."
 
 `;
-
+let validQuestions = null;
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
       contents: prompt,
     });
 
-   const questions = JSON.parse(response.text);
+   const cleaned = response.text
+  .replace(/```json/g, "")
+  .replace(/```/g, "")
+  .trim();
+
+console.log("TEMİZLENMİŞ JSON:");
+console.log(cleaned);
+
+const questions = JSON.parse(cleaned);
 
 const allValid = questions.every(validateQuestion);
 
