@@ -13,7 +13,21 @@ app.use(express.json());
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
 });
+function validateQuestion(question) {
+  try {
+    const result = Function(
+      `"use strict"; return (${question.solutionExpression})`
+    )();
 
+    const correctValue = Number(
+      question.options[question.correctAnswer]
+    );
+
+    return result === correctValue;
+  } catch {
+    return false;
+  }
+}
 app.post("/generate-question", async (req, res) => {
   try {
 const { topic, count } = req.body;
@@ -54,11 +68,42 @@ Tam olarak ${count} adet soru içeren JSON ARRAY döndür.
 ]
 
 JSON dizisinin uzunluğu mutlaka ${count} olmalıdır.
+
 Her soru nesnesinde şu alanlar bulunmalıdır:
 - questionText
+- solutionExpression
 - options
 - correctAnswer
 - explanation
+
+solutionExpression alanı, sorunun çözümünde kullanılan matematiksel işlemi içermelidir.
+
+Kurallar:
+- Sadece matematiksel ifade yaz.
+- Açıklama yazma.
+- Eşittir (=) işareti kullanma.
+- Sonucu yazma.
+
+Örnekler:
+16+7
+24-6
+4*5
+20/4
+15-5+8
+
+ÖRNEK:
+
+{
+  "questionText": "Ayşe'nin 16 kalemi vardı. 7 kalem daha aldı. Ayşe'nin toplam kaç kalemi oldu?",
+  "solutionExpression": "16+7",
+  "options": {
+    "A": "21",
+    "B": "22",
+    "C": "23",
+    "D": "24"
+  },
+  "correctAnswer": "C",
+  "explanation": "16 ile 7 toplanır ve 23 bulunur."
 
 `;
 
@@ -67,7 +112,13 @@ Her soru nesnesinde şu alanlar bulunmalıdır:
       contents: prompt,
     });
 
-    res.json({
+   const questions = JSON.parse(response.text);
+
+const allValid = questions.every(validateQuestion);
+
+console.log("Validator sonucu:", allValid);
+
+res.json({
   text: response.text,
   raw: response
 });
