@@ -339,6 +339,48 @@ promptHints: [
         }   // topics
       }     // matematik
     }       // subjects
-  }         // 2. sınıf
+  },
+  "3": {
+  name: "3. Sınıf",
+  subjects: {
+    "matematik": {
+      name: "Matematik",
+      topics: {
+        "dogal-sayilar": { name: "Doğal Sayılar",
+
+  validatorType: "none",
+
+  promptHints: [
+    "1000'e kadar olan doğal sayıları kullan.",
+    "Basamak değeri soruları oluştur.",
+    "Sayı karşılaştırma ve sıralama soruları kullan.",
+    "Ritmik sayma etkinlikleri oluştur.",
+    "Türk isimleri ve günlük yaşam örnekleri kullan.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "1000'e kadar olan doğal sayıları okur ve yazar.",
+    "Üç basamaklı doğal sayıların basamak değerlerini belirler.",
+    "Doğal sayıları karşılaştırır ve sıralar.",
+    "Ritmik sayma becerilerini geliştirir.",
+    "Eksik bırakılan sayı örüntülerini tamamlar."
+  ]
+},
+        "toplama-islemi": {},
+        "cikarma-islemi": {},
+        "carpma-islemi": {},
+        "bolme-islemi": {},
+        "kesirler": {},
+        "geometrik-cisimler": {},
+        "uzunluk-olcme": {},
+        "cevre-olcme": {},
+        "zaman-olcme": {},
+        "para": {},
+        "veri-toplama": {}
+      }
+    }
+  }
+}         // 3. sınıf
 }           // grades
 };          // CURRICULUM

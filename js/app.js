@@ -62,7 +62,17 @@ class App {
         })
         .catch(err => {
           console.error("Soru üretiminde hata:", err);
-          alert("Sorular hazırlanırken bir sorun oluştu. Lütfen tekrar deneyin.");
+          let message = "Soru kağıtları kayboldu! Lütfen tekrar deneyin..";
+
+if (error.message?.includes("429")) {
+  message = "Öğretmenlerimiz bugün biraz yoruldu. Lütfen daha sonra tekrar deneyin.";
+}
+
+if (error.message?.includes("503")) {
+  message = "Öğretmenlerimiz şu anda yoğun. Birkaç dakika sonra tekrar deneyin.";
+}
+
+alert(message);
           this.renderSelector(); // Seçim ekranına geri dön
         });
     });
