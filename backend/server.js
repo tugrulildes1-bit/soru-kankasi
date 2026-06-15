@@ -138,7 +138,11 @@ let validQuestions = null;
 console.log(
   JSON.stringify(questions, null, 2)
 );
-  const allValid = questions.every(validateQuestion);
+ let allValid = true;
+
+if (topicData.validatorType !== "none") {
+  allValid = questions.every(validateQuestion);
+}
 
   console.log("Validator sonucu:", allValid);
 
