@@ -367,20 +367,502 @@ promptHints: [
     "Eksik bırakılan sayı örüntülerini tamamlar."
   ]
 },
-        "toplama-islemi": {},
-        "cikarma-islemi": {},
-        "carpma-islemi": {},
-        "bolme-islemi": {},
-        "kesirler": {},
-        "geometrik-cisimler": {},
-        "uzunluk-olcme": {},
-        "cevre-olcme": {},
-        "zaman-olcme": {},
-        "para": {},
-        "veri-toplama": {}
+        "toplama-islemi": {name: "Toplama İşlemi",
+
+  validatorType: "addition",
+
+  promptHints: [
+    "Üç basamaklı doğal sayılar kullan.",
+    "Eldeli ve eldesiz toplama işlemlerine yer ver.",
+    "Günlük yaşam problemleri oluştur.",
+    "Türk isimleri kullan.",
+    "Eksik toplananı bulma soruları ekle.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Üç basamaklı doğal sayılarla toplama işlemi yapar.",
+    "Toplama işlemi gerektiren problemleri çözer.",
+    "İşlem sonucunu tahmin eder ve tahminini kontrol eder.",
+    "Eksik toplananı bulur.",
+    "Toplama işlemini günlük yaşam durumlarıyla ilişkilendirir."
+  ]
+},
+        "cikarma-islemi": {name: "Çıkarma İşlemi",
+
+  validatorType: "subtraction",
+
+  promptHints: [
+    "Üç basamaklı doğal sayılar kullan.",
+    "Onluk bozmayı gerektiren ve gerektirmeyen işlemler oluştur.",
+    "Günlük yaşam problemleri oluştur.",
+    "Türk isimleri kullan.",
+    "Eksilen veya çıkanı bulma soruları ekle.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Üç basamaklı doğal sayılarla çıkarma işlemi yapar.",
+    "Çıkarma işlemi gerektiren problemleri çözer.",
+    "İşlem sonucunu tahmin eder ve tahminini kontrol eder.",
+    "Eksilen veya çıkanı bulur.",
+    "Çıkarma işlemini günlük yaşam durumlarıyla ilişkilendirir."
+  ]
+},
+        "carpma-islemi": {name: "Çarpma İşlemi",
+
+  validatorType: "multiplication",
+
+  promptHints: [
+    "Çarpım tablosunu kullan.",
+    "İki basamaklı sayı ile tek basamaklı sayı çarpma işlemleri oluştur.",
+    "Eşit gruplar ve tekrarlı toplama senaryoları kullan.",
+    "Günlük yaşam problemleri oluştur.",
+    "Türk isimleri kullan.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Çarpım tablosunu kullanarak çarpma işlemi yapar.",
+    "İki basamaklı doğal sayılar ile tek basamaklı doğal sayıları çarpar.",
+    "Çarpma işlemi gerektiren problemleri çözer.",
+    "Çarpma işlemini tekrarlı toplama ile ilişkilendirir.",
+    "Günlük yaşam durumlarında çarpma işlemini kullanır."
+  ]
+},
+        "bolme-islemi": {name: "Bölme İşlemi",
+
+  validatorType: "division",
+
+  promptHints: [
+    "Bölme işlemini çarpma işlemiyle ilişkilendir.",
+    "Kalanlı ve kalansız bölme işlemlerine yer ver.",
+    "Günlük yaşam problemleri oluştur.",
+    "Türk isimleri kullan.",
+    "Eşit paylaşma ve gruplama senaryoları oluştur.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Doğal sayılarla bölme işlemi yapar.",
+    "Kalansız bölme işlemlerini çözer.",
+    "Kalanlı bölme işlemlerini çözer ve kalanı yorumlar.",
+    "Bölme ile çarpma arasındaki ilişkiyi fark eder.",
+    "Bölme işlemi gerektiren günlük yaşam problemlerini çözer."
+  ]
+},
+        "kesirler": {name: "Kesirler",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Pay ve payda kavramlarını kullan.",
+    "Birim kesir soruları oluştur.",
+    "Pizza, çikolata, pasta ve meyve gibi somut örnekler kullan.",
+    "Şekil modelleriyle ilişkilendir.",
+    "Basit kesir karşılaştırmalarına yer ver.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Birim kesri tanır ve gösterir.",
+    "Pay ve payda kavramlarını açıklar.",
+    "Basit kesirleri modeller üzerinde gösterir.",
+    "Kesirleri günlük yaşam örnekleriyle ilişkilendirir.",
+    "Basit kesirleri karşılaştırır."
+  ]
+},
+        "geometrik-cisimler": {name: "Geometrik Cisimler ve Şekiller",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Kare, dikdörtgen, üçgen ve çember gibi şekilleri kullan.",
+    "Küp, prizma, silindir ve küre gibi geometrik cisimlere yer ver.",
+    "Günlük yaşamdan nesnelerle ilişki kur.",
+    "Top, kutu, konserve kutusu ve zar gibi örnekler kullan.",
+    "Şekiller ile cisimler arasındaki farkı vurgula.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Geometrik şekilleri tanır ve özelliklerini açıklar.",
+    "Geometrik cisimleri tanır ve günlük yaşam nesneleriyle ilişkilendirir.",
+    "Şekil ve cisimler arasındaki farkı açıklar.",
+    "Geometrik özellikleri kullanarak sınıflandırma yapar.",
+    "Çevresindeki nesnelerin geometrik özelliklerini fark eder."
+  ]
+},
+        "uzunluk-olcme": {name: "Uzunluk Ölçme",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Milimetre, santimetre ve metre birimlerini kullan.",
+    "Uzunluk birimleri arasında basit dönüşümler yap.",
+    "Cetvel, masa, kapı ve kalem gibi günlük nesneler kullan.",
+    "Uzunluk karşılaştırma problemleri oluştur.",
+    "Günlük yaşamdan örnekler ver.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Milimetre, santimetre ve metreyi tanır.",
+    "Uzunluk birimlerini kullanarak ölçme yapar.",
+    "Uzunlukları karşılaştırır ve sıralar.",
+    "Basit uzunluk dönüşümleri yapar.",
+    "Uzunluk ölçmeyi gerektiren problemleri çözer."
+  ]
+},
+        "cevre-olcme": {name: "Çevre Ölçme",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Karenin ve dikdörtgenin çevresini kullan.",
+    "Kenar uzunlukları verilen şekiller oluştur.",
+    "Bahçe, çerçeve ve masa gibi günlük yaşam örnekleri kullan.",
+    "Basit çevre problemleri oluştur.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Karenin çevresini hesaplar.",
+    "Dikdörtgenin çevresini hesaplar.",
+    "Çevre kavramını açıklar.",
+    "Çevre ölçmeyi gerektiren problemleri çözer.",
+    "Günlük yaşamda çevre ölçmenin kullanım alanlarını fark eder."
+  ]
+},
+        "zaman-olcme": {name: "Zamanı Ölçme",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Saat ve dakika kavramlarını kullan.",
+    "Süre hesaplama problemleri oluştur.",
+    "Takvim ve günlük rutin örnekleri ver.",
+    "Okul ve oyun senaryoları kullan.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Saat ve dakika arasındaki ilişkiyi açıklar.",
+    "Süre hesaplamaları yapar.",
+    "Takvim bilgilerini kullanır.",
+    "Zamanı ölçmeyi gerektiren problemleri çözer.",
+    "Günlük yaşamda zamanı planlamanın önemini fark eder."
+  ]
+        },
+        "para": {name: "Para",
+
+  validatorType: "addition",
+
+  promptHints: [
+    "TL ve kuruş kavramlarını kullan.",
+    "Alışveriş senaryoları oluştur.",
+    "Para üstü hesaplama soruları ekle.",
+    "Türk Lirası örnekleri kullan.",
+    "Günlük yaşam problemleri oluştur.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "TL ve kuruş arasındaki ilişkiyi açıklar.",
+    "Alışveriş problemlerini çözer.",
+    "Para üstü hesaplamaları yapar.",
+    "Parayla ilgili günlük yaşam problemlerini çözer.",
+    "Tasarruf bilinci geliştirir."
+  ]
+},
+        "veri-toplama": {name: "Veri Toplama ve Değerlendirme",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Tablo ve grafik yorumlama soruları oluştur.",
+    "En çok ve en az kavramlarını kullan.",
+    "Öğrencilerin ilgisini çekebilecek veri örnekleri kullan.",
+    "Sınıf içi anket senaryoları oluştur.",
+    "3. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Verileri tablo halinde gösterir.",
+    "Basit grafikleri yorumlar.",
+    "En fazla ve en az olan verileri belirler.",
+    "Verilerden çıkarım yapar.",
+    "Veri toplamayı gerektiren günlük yaşam durumlarını fark eder."
+  ]
+}
       }
     }
   }
-}         // 3. sınıf
+},
+"4": {
+  name: "4. Sınıf",
+  subjects: {
+    "matematik": {
+      name: "Matematik",
+      topics: {
+        "dogal-sayilar": {name: "Doğal Sayılar",
+
+  validatorType: "none",
+
+  promptHints: [
+    "1000000'a kadar doğal sayılar kullan.",
+    "Basamak değeri soruları oluştur.",
+    "Sayı örüntüleri kullan.",
+    "Karşılaştırma ve sıralama soruları oluştur.",
+    "3 ve 4 basamaklı sayılarla günlük yaşam problemleri kur.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Doğal sayıları okur ve yazar.",
+    "Basamak değerlerini belirler.",
+    "Doğal sayıları karşılaştırır ve sıralar.",
+    "Sayı örüntülerini tamamlar.",
+    "Doğal sayılarla ilgili problemleri çözer."
+  ]
+},
+        "toplama-islemi": {name: "Toplama İşlemi",
+
+  validatorType: "addition",
+
+  promptHints: [
+    "Dört ve beş basamaklı sayılar kullan.",
+    "Eldeli toplama işlemleri oluştur.",
+    "Günlük yaşam problemleri kullan.",
+    "Tahmin becerisini geliştiren sorular oluştur.",
+    "Türk isimleri kullan.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Doğal sayılarla toplama işlemi yapar.",
+    "Toplama işlemi gerektiren problemleri çözer.",
+    "Sonucu tahmin eder ve kontrol eder.",
+    "Eksik toplananı bulur.",
+    "Toplama işlemini günlük yaşamla ilişkilendirir."
+  ]
+},
+        "cikarma-islemi": {name: "Çıkarma İşlemi",
+
+  validatorType: "subtraction",
+
+  promptHints: [
+    "Dört ve beş basamaklı sayılar kullan.",
+    "Onluk bozmalı işlemler oluştur.",
+    "Günlük yaşam problemleri kur.",
+    "Eksilen ve çıkanı bulma soruları oluştur.",
+    "Türk isimleri kullan.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Doğal sayılarla çıkarma işlemi yapar.",
+    "Çıkarma işlemi problemlerini çözer.",
+    "Sonucu tahmin eder.",
+    "Eksilen veya çıkanı bulur.",
+    "Çıkarma işlemini günlük yaşamla ilişkilendirir."
+  ]
+},
+        "carpma-islemi": {name: "Çarpma İşlemi",
+
+  validatorType: "multiplication",
+
+  promptHints: [
+    "İki ve üç basamaklı sayılarla çarpma işlemleri oluştur.",
+    "Günlük yaşam problemleri kullan.",
+    "Çarpım tahmini soruları ekle.",
+    "Türk isimleri kullan.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Doğal sayılarla çarpma işlemi yapar.",
+    "Çarpma problemlerini çözer.",
+    "İşlem sonucunu tahmin eder.",
+    "Çarpma işlemini günlük yaşamla ilişkilendirir.",
+    "Farklı çözüm yolları geliştirir."
+  ]
+},
+        "bolme-islemi": { name: "Bölme İşlemi",
+
+  validatorType: "division",
+
+  promptHints: [
+    "Kalanlı ve kalansız bölme işlemleri oluştur.",
+    "Günlük yaşam problemleri kur.",
+    "Bölme-çarpma ilişkisini kullan.",
+    "Türk isimleri kullan.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Doğal sayılarla bölme işlemi yapar.",
+    "Kalanlı bölme problemlerini çözer.",
+    "Bölme ile çarpma arasındaki ilişkiyi açıklar.",
+    "Bölme işlemi problemlerini çözer.",
+    "Günlük yaşamla ilişki kurar."
+  ]
+},
+        "kesirler": {name: "Kesirler",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Pay ve payda kavramlarını kullan.",
+    "Denk kesirlere yer ver.",
+    "Kesirleri karşılaştırma soruları oluştur.",
+    "Somut örnekler kullan.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Kesirleri modellerle gösterir.",
+    "Kesirleri karşılaştırır.",
+    "Denk kesirleri belirler.",
+    "Kesir problemlerini çözer.",
+    "Kesirleri günlük yaşamla ilişkilendirir."
+  ]
+},
+        "ondalik-gosterimler": {name: "Ondalık Gösterimler",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Ondalık gösterimleri günlük yaşam örnekleriyle ilişkilendir.",
+    "TL ve kuruş örnekleri kullan.",
+    "Basit ondalık karşılaştırmalar oluştur.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Ondalık gösterimleri tanır.",
+    "Ondalık sayıları karşılaştırır.",
+    "Ondalık gösterimleri günlük yaşamda kullanır.",
+    "TL-kuruş ilişkisini açıklar.",
+    "Ondalık problemlerini çözer."
+  ]
+},
+        "geometrik-cisimler": {name: "Geometrik Şekiller ve Cisimler",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Geometrik cisimleri günlük yaşamla ilişkilendir.",
+    "Açı kavramına giriş yap.",
+    "Şekilleri özelliklerine göre sınıflandır.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Geometrik cisimleri tanır.",
+    "Şekilleri sınıflandırır.",
+    "Açı kavramını tanır.",
+    "Günlük yaşam nesneleriyle ilişki kurar.",
+    "Geometrik özellikleri açıklar."
+  ]
+},
+        "uzunluk-olcme": {name: "Uzunluk Ölçme",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Uzunluk dönüşümleri oluştur.",
+    "Metre ve kilometreyi ilişkilendir.",
+    "Günlük yaşam problemleri kur.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Uzunluk ölçü birimlerini kullanır.",
+    "Birim dönüşümleri yapar.",
+    "Uzunluk problemlerini çözer.",
+    "Ölçme sonuçlarını karşılaştırır.",
+    "Günlük yaşamla ilişki kurar."
+  ]
+},
+        "cevre-olcme": {name: "Çevre Ölçme",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Çevre hesaplama problemleri oluştur.",
+    "Kare ve dikdörtgen kullan.",
+    "Günlük yaşam örnekleri ver.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Çevreyi hesaplar.",
+    "Çevre problemlerini çözer.",
+    "Şekilleri karşılaştırır.",
+    "Ölçme becerilerini geliştirir.",
+    "Günlük yaşamla ilişki kurar."
+  ]
+},
+        "alan-olcme": { name: "Alan Ölçme",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Kareli zeminler kullan.",
+    "Basit alan hesaplamaları oluştur.",
+    "Günlük yaşam örnekleri ver.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Alan kavramını açıklar.",
+    "Kareli yüzeylerde alan belirler.",
+    "Alan problemlerini çözer.",
+    "Alanları karşılaştırır.",
+    "Günlük yaşamla ilişki kurar."
+  ]},
+        "zaman-olcme": {name: "Zamanı Ölçme",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Süre problemleri oluştur.",
+    "Takvim ve saat ilişkisini kullan.",
+    "Günlük yaşam senaryoları kur.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Süre hesaplamaları yapar.",
+    "Takvimi kullanır.",
+    "Zaman problemlerini çözer.",
+    "Günlük planlama becerisi geliştirir.",
+    "Zamanı etkili kullanmanın önemini fark eder."
+  ]
+},
+        "veri-toplama": {name: "Veri Toplama ve Değerlendirme",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Sütun grafikleri kullan.",
+    "Tablo yorumlama soruları oluştur.",
+    "En fazla ve en az kavramlarını kullan.",
+    "4. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Verileri tablo halinde gösterir.",
+    "Grafikleri yorumlar.",
+    "Verilerden çıkarım yapar.",
+    "En çok ve en az olanı belirler.",
+    "Verileri günlük yaşamla ilişkilendirir."
+  ]
+}
+      }
+    }
+  }
+}         // 4. sınıf
 }           // grades
 };          // CURRICULUM
