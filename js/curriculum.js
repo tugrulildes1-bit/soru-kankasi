@@ -10,6 +10,182 @@
 
 export const CURRICULUM = {
   grades: {
+    "1": {
+  name: "1. Sınıf",
+  subjects: {
+    "matematik": {
+      name: "Matematik",
+      topics: {
+        "dogal-sayilar": {
+    name: "Doğal Sayılar",
+
+    validatorType: "none",
+
+    promptHints: [
+        "Sayılar 20'yi geçmesin.",
+        "Somut nesneler kullan.",
+        "Çocukların günlük yaşamından örnekler ver.",
+        "Karşılaştırma sorularında az-çok kavramlarını kullan."
+    ],
+
+    outcomes: [
+        "20'ye kadar olan doğal sayıları okur ve yazar.",
+        "Nesne sayısı ile rakamlar arasında ilişki kurar.",
+        "Doğal sayıları karşılaştırır ve sıralar.",
+        "Birer ve onar ritmik sayar.",
+        "Eksik bırakılan sayıları tamamlar."
+    ]
+},
+
+  "toplama-islemi": {
+  name: "Toplama İşlemi",
+
+  validatorType: "addition",
+
+  promptHints: [
+    "Toplam sonucu 20'yi geçmesin.",
+    "Elma, kalem, oyuncak gibi somut nesneler kullan.",
+    "Günlük hayat problemleri oluştur.",
+    "Çocuk dostu ve kısa cümleler kullan.",
+    "Eldesiz toplama işlemleri tercih et.",
+    "1. sınıf seviyesini aşma."
+  ],
+
+   outcomes: [
+    "20'ye kadar olan doğal sayılarla toplama işlemi yapar.",
+    "Toplama işlemini somut nesneler kullanarak modeller.",
+    "Toplama işlemini gerektiren günlük hayat problemlerini çözer.",
+    "Eksik toplananı bulur."
+  ]
+},
+
+"cikarma-islemi": {
+  name: "Çıkarma İşlemi",
+
+  validatorType: "subtraction",
+
+  promptHints: [
+    "Sonuçlar 20'yi geçmesin.",
+    "Eksilme ve verme senaryoları kullan.",
+    "Elma, kalem, oyuncak gibi somut nesneler kullan.",
+    "Günlük hayat problemleri oluştur.",
+    "Çocuk dostu ve kısa cümleler kullan.",
+    "1. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "20'ye kadar olan doğal sayılarla çıkarma işlemi yapar.",
+    "Çıkarma işlemini somut nesneler kullanarak modeller.",
+    "Çıkarma işlemini gerektiren günlük hayat problemlerini çözer.",
+    "Eksilen ve çıkanı belirler."
+  ]
+},
+"geometrik-sekiller": {
+  name: "Geometrik Şekiller",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Daire, kare, üçgen ve dikdörtgen kullan.",
+    "Çocukların çevresindeki nesnelerden örnekler ver.",
+    "Top, pencere, kitap ve trafik levhası gibi somut örnekler kullan.",
+    "Şekilleri köşe ve kenar özellikleriyle ilişkilendir.",
+    "1. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Çevresindeki nesnelerin geometrik şekillerini belirler.",
+    "Kare, üçgen, dikdörtgen ve daireyi tanır.",
+    "Geometrik şekilleri günlük yaşam nesneleriyle ilişkilendirir.",
+    "Şekiller arasındaki benzerlik ve farklılıkları fark eder."
+  ]
+},
+"uzamsal-iliskiler": {
+  name: "Uzamsal İlişkiler (Yer-Yön Kavramları)",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Altında, üstünde, önünde, arkasında kavramlarını kullan.",
+    "Sağında ve solunda ifadelerine yer ver.",
+    "Sınıf, ev ve oyun alanı gibi günlük yaşam senaryoları oluştur.",
+    "Çocukların kolay hayal edebileceği nesneler kullan.",
+    "1. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Bir nesnenin başka bir nesneye göre konumunu belirtir.",
+    "Altında, üstünde, önünde ve arkasında kavramlarını kullanır.",
+    "Sağında ve solunda kavramlarını doğru şekilde ifade eder.",
+    "Günlük yaşamda nesnelerin konumlarını açıklar."
+  ]
+},
+"para": {
+  name: "Paralarımız",
+
+  validatorType: "addition",
+
+  promptHints: [
+    "1 TL, 5 TL ve 10 TL gibi temel para birimlerini kullan.",
+    "Market ve alışveriş senaryoları oluştur.",
+    "Çocukların günlük hayatta karşılaşabileceği örnekler ver.",
+    "Toplam para miktarı 20 TL'yi geçmesin.",
+    "1. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Paraları tanır ve değerlerini bilir.",
+    "Basit alışveriş problemlerini çözer.",
+    "Verilen paraların toplam değerini bulur.",
+    "Günlük yaşamda para kullanımına ilişkin problemleri çözer."
+  ]
+},
+"zaman-olcme": {
+  name: "Zamanı Ölçme (Saatler ve Günün Bölümleri)",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Sabah, öğle, akşam ve gece kavramlarını kullan.",
+    "Günlük rutinlerden örnekler ver.",
+    "Okula gitme, kahvaltı yapma, uyuma gibi senaryolar oluştur.",
+    "Tam saat kavramını kullan.",
+    "1. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Günün bölümlerini ayırt eder.",
+    "Günlük olayları oluş sırasına göre sıralar.",
+    "Tam saatleri okur ve gösterir.",
+    "Zamanla ilgili günlük yaşam problemlerini çözer."
+  ]
+},
+"olcme": {
+  name: "Ölçme (Ağırlık ve Uzunluk)",
+
+  validatorType: "none",
+
+  promptHints: [
+    "Uzun-kısa, ağır-hafif, fazla-az kavramlarını kullan.",
+    "Kalem, çanta, kitap gibi somut nesneler kullan.",
+    "Karşılaştırma soruları oluştur.",
+    "Günlük yaşam örnekleri ver.",
+    "1. sınıf seviyesini aşma."
+  ],
+
+  outcomes: [
+    "Nesneleri uzunluklarına göre karşılaştırır.",
+    "Nesneleri ağırlıklarına göre karşılaştırır.",
+    "Daha fazla ve daha az kavramlarını kullanır.",
+    "Ölçmeye ilişkin günlük yaşam problemlerini çözer."
+  ]
+},
+
+      }   // topics
+    }     // matematik
+  }       // subjects
+},        // 1. sınıf
+
     "2": {
       name: "2. Sınıf",
       subjects: {
@@ -18,6 +194,14 @@ export const CURRICULUM = {
           topics: {
             "dogal-sayilar": {
               name: "Doğal Sayılar",
+              validatorType: "none",
+
+promptHints: [
+  "2. sınıf seviyesine uygun doğal sayı etkinlikleri oluştur.",
+  "Sayı karşılaştırma ve sıralama soruları kullan.",
+  "Ritmik sayma soruları oluştur.",
+  "Türk isimleri ve günlük yaşam örnekleri kullan."
+],
               outcomes: [
                 "100'den küçük doğal sayıların basamaklarını adlandırır, basamaklarındaki rakamların basamak değerlerini belirtir.",
                 "100'e kadar olan doğal sayıları onluk ve birliklerine ayırarak gösterir.",
@@ -98,6 +282,13 @@ promptHints: [
             },
             "kesirler": {
               name: "Kesirler",
+              validatorType: "none",
+
+promptHints: [
+  "Yarım ve çeyrek kavramlarını kullan.",
+  "Pizza, elma, çikolata gibi somut örnekler tercih et.",
+  "Çocuk dostu günlük yaşam senaryoları oluştur."
+],
               outcomes: [
                 "Bütün, yarım ve çeyrek arasındaki ilişkiyi açıklar.",
                 "Şekillerin bütününü, yarısını ve çeyreğini uygun modellerle gösterir."
@@ -105,6 +296,13 @@ promptHints: [
             },
             "zaman-olcme": {
               name: "Zamanı Ölçme",
+              validatorType: "none",
+
+promptHints: [
+  "Tam, yarım ve çeyrek saat kavramlarını kullan.",
+  "Okul, oyun ve günlük rutin örnekleri oluştur.",
+  "Takvim, gün, hafta ve ay ilişkilerini kullan."
+],
               outcomes: [
                 "Tam, yarım ve çeyrek saatleri okur ve gösterir.",
                 "Zaman ölçme birimleri (gün, hafta, ay, mevsim, yıl) arasındaki ilişkileri açıklar."
@@ -112,6 +310,13 @@ promptHints: [
             },
             "geometrik-sekiller": {
               name: "Geometrik Şekiller",
+              validatorType: "none",
+
+promptHints: [
+  "Üçgen, kare, dikdörtgen, çember ve daireyi kullan.",
+  "Etraftaki nesneler üzerinden örnek ver.",
+  "Çocukların kolay hayal edebileceği senaryolar kur."
+],
               outcomes: [
                 "Geometrik şekilleri (üçgen, kare, dikdörtgen, çember, daire) kenar ve köşe sayılarına göre sınıflandırır.",
                 "Kare, dikdörtgen ve üçgenin kenarlarını belirler."
@@ -119,14 +324,21 @@ promptHints: [
             },
             "sivi-olcme": {
               name: "Sıvı Ölçme",
+              validatorType: "none",
+
+promptHints: [
+  "Bardak, şişe ve sürahi gibi örnekler kullan.",
+  "Günlük yaşamdan sıvı ölçme problemleri oluştur.",
+  "Karşılaştırma soruları kullan."
+],
               outcomes: [
                 "Standart olmayan sıvı ölçme birimlerini kullanarak sıvıların miktarını ölçer ve karşılaştırır.",
                 "Sıvı ölçme birimleriyle ilgili problemleri çözer."
               ]
-            }
-          }
-        }
-      }
-    }
-  }
-};
+                }
+        }   // topics
+      }     // matematik
+    }       // subjects
+  }         // 2. sınıf
+}           // grades
+};          // CURRICULUM
