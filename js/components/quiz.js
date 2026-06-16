@@ -38,11 +38,20 @@ export class QuizComponent {
     this.container.innerHTML = `
       <div class="card quiz-card">
         <div class="quiz-header">
-          <span class="progress-text">Soru ${this.state.currentIndex + 1} / ${this.questions.length}</span>
-        </div>
+  <span class="progress-text">
+    ☁️ Soru ${this.state.currentIndex + 1} / ${this.questions.length}
+  </span>
+
+  <div class="progress-bar">
+    <div
+      class="progress-fill"
+      style="width: 50%"
+    </div>
+  </div>
+</div>
 
         <h2 class="question-text">${question.questionText}</h2>
-
+        <div style="height:20px;background:red;"></div>
         <div class="options-container" id="options-container">
           ${Object.keys(question.options).map(key => `
             <button class="option-btn" data-option="${key}">

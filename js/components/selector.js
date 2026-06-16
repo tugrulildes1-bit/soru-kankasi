@@ -227,9 +227,9 @@ export class SelectorComponent {
           <div class="loading-dot"></div>
           <div class="loading-dot"></div>
         </div>
-        <p class="loading-text">Soruların hazırlanıyor... ✨</p>
+        <p class="loading-text">Bulutların arasında sorular aranıyor... ✨</p>
         <p style="margin-top: 12px; font-size: 0.95rem; color: var(--color-text-muted);">
-          Lütfen bekleyin, yapay zekâ senin için en güzel soruları hazırlıyor.
+          Soru Kankası Pofi senin için en uygun soruları seçiyor!
         </p>
       </div>
     `;
