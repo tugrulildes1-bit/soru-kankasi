@@ -51,7 +51,6 @@ export class QuizComponent {
 </div>
 
         <h2 class="question-text">${question.questionText}</h2>
-        <div style="height:20px;background:red;"></div>
         <div class="options-container" id="options-container">
           ${Object.keys(question.options).map(key => `
             <button class="option-btn" data-option="${key}">
