@@ -20,11 +20,12 @@ const NAMES = [
 function getRandomName() {
   return NAMES[Math.floor(Math.random() * NAMES.length)];
 }
+
 function shuffleArray(array) {
   return array.sort(() => Math.random() - 0.5);
 }
-function loadTemplates() {
 
+function loadTemplates() {
   const filePath = path.join(
     __dirname,
     "..",
@@ -33,25 +34,18 @@ function loadTemplates() {
     "toplama.json"
   );
 
-  console.log("__dirname =", __dirname);
-  console.log("filePath =", filePath);
-
   const rawData = fs.readFileSync(filePath, "utf8");
-
   return JSON.parse(rawData);
-}
-
-function testLoadTemplates() {
-  const templates = loadTemplates();
-
-  console.log("Yüklenen Template'ler:");
-  console.log(templates);
 }
 
 function generateQuestion() {
   const templates = loadTemplates();
 
-  const template = templates[0];
+  const template =
+    templates[Math.floor(Math.random() * templates.length)];
+
+  console.log("\nSEÇİLEN TEMPLATE:");
+  console.log(template.id);
 
   const a = getRandomNumber(
     template.variables.a.min,
@@ -71,36 +65,47 @@ function generateQuestion() {
   questionText = questionText.replace("{a}", a);
   questionText = questionText.replace("{b}", b);
 
-  console.log("\nÜRETİLEN SORU:");
-  console.log(questionText);
-const correctAnswer = a + b;
-const options = [
-  correctAnswer,
-  correctAnswer + 1,
-  correctAnswer - 1,
-  correctAnswer + 2
-];
+  const correctAnswer = a + b;
 
-shuffleArray(options);
+  const options = [
+    correctAnswer,
+    correctAnswer + 1,
+    correctAnswer - 1,
+    correctAnswer + 2
+  ];
 
-const formattedOptions = {
-  A: options[0],
-  B: options[1],
-  C: options[2],
-  D: options[3]
-};
+  shuffleArray(options);
 
-const correctLetter =
-  Object.keys(formattedOptions).find(
-    key => formattedOptions[key] === correctAnswer
-  );
- console.log("\nŞIKLAR:");
-console.log(formattedOptions);
+  const formattedOptions = {
+    A: options[0],
+    B: options[1],
+    C: options[2],
+    D: options[3]
+  };
 
-console.log("\nDOĞRU ŞIK:");
-console.log(correctLetter);
+  const correctLetter =
+    Object.keys(formattedOptions).find(
+      key => formattedOptions[key] === correctAnswer
+    );
 
-console.log("\nDOĞRU CEVAP:");
-console.log(correctAnswer);
+  return {
+    questionText,
+    options: formattedOptions,
+    correctAnswer: correctLetter
+  };
 }
-generateQuestion();
+
+function generateQuestions(count) {
+  const questions = [];
+
+  for (let i = 0; i < count; i++) {
+    questions.push(generateQuestion());
+  }
+
+  return questions;
+}
+
+const questions = generateQuestions(5);
+
+console.log("\nOLUŞTURULAN TEST:");
+console.log(JSON.stringify(questions, null, 2));

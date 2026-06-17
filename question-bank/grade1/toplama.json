@@ -16,5 +16,66 @@
         "max": 10
       }
     }
+},
+
+{
+  "id": "add_002",
+  "template": "{name} isimli öğrencinin {a} kalemi vardı. Öğretmeni {b} kalem daha verdi. Toplam kaç kalemi oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": {
+      "min": 1,
+      "max": 10
+    },
+    "b": {
+      "min": 1,
+      "max": 10
+    }
   }
+},
+{
+  "id": "add_003",
+  "template": "{name} isimli öğrencinin {a} kitabı vardı. Kütüphaneden {b} kitap daha aldı. Toplam kaç kitabı oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": {
+      "min": 1,
+      "max": 10
+    },
+    "b": {
+      "min": 1,
+      "max": 10
+    }
+  }
+},
+{
+  "id": "add_004",
+  "template": "{name} isimli öğrencinin {a} misketi vardı. Arkadaşı ona {b} misket daha hediye etti. Toplam kaç misketi oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": {
+      "min": 1,
+      "max": 10
+    },
+    "b": {
+      "min": 1,
+      "max": 10
+    }
+  }
+},
+{
+  "id": "add_005",
+  "template": "{name} isimli öğrencinin {a} balonu vardı. Annesi ona {b} balon verdi. Toplam kaç balonu oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": {
+      "min": 1,
+      "max": 10
+    },
+    "b": {
+      "min": 1,
+      "max": 10
+    }
+}
+}
 ]
