@@ -1,0 +1,47 @@
+[
+  {
+    "id": "mul_001",
+    "template": "{name} isimli öğrencinin {a} kutusu vardır. Her kutuda {b} kalem bulunmaktadır. Toplam kaç kalem vardır?",
+    "validatorType": "multiplication",
+    "variables": {
+      "a": { "min": 2, "max": 5 },
+      "b": { "min": 2, "max": 10 }
+    }
+  },
+  {
+    "id": "mul_002",
+    "template": "{name} isimli öğrencinin {a} paketi vardır. Her pakette {b} şeker vardır. Toplam kaç şeker vardır?",
+    "validatorType": "multiplication",
+    "variables": {
+      "a": { "min": 2, "max": 5 },
+      "b": { "min": 2, "max": 10 }
+    }
+  },
+  {
+    "id": "mul_003",
+    "template": "{a} rafta bulunmaktadır. Her rafta {b} kitap vardır. Toplam kaç kitap vardır?",
+    "validatorType": "multiplication",
+    "variables": {
+      "a": { "min": 2, "max": 5 },
+      "b": { "min": 2, "max": 10 }
+    }
+  },
+  {
+    "id": "mul_004",
+    "template": "{a} sepet vardır. Her sepette {b} elma vardır. Toplam kaç elma vardır?",
+    "validatorType": "multiplication",
+    "variables": {
+      "a": { "min": 2, "max": 5 },
+      "b": { "min": 2, "max": 10 }
+    }
+  },
+  {
+    "id": "mul_005",
+    "template": "Bir sınıfta {a} sıra vardır. Her sırada {b} öğrenci oturmaktadır. Sınıfta toplam kaç öğrenci vardır?",
+    "validatorType": "multiplication",
+    "variables": {
+      "a": { "min": 2, "max": 5 },
+      "b": { "min": 2, "max": 10 }
+    }
+  }
+]

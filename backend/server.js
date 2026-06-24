@@ -1,3 +1,6 @@
+console.log("SERVER DOSYASI YÜKLENDİ");
+
+const { generateQuestions } = require("./question-generator");
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -14,6 +17,13 @@ app.use(express.json());
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
 });
+const LOCAL_TOPICS = {
+  "toplama-islemi": "toplama.json",
+  "cikarma-islemi": "cikarma.json",
+  "para": "paralarimiz.json",
+  "uzunluk-olcme": "uzunluk-olcme.json",
+  "olcme": "olcme.json"
+};
 function validateQuestion(question) {
   try {
     const result = Function(
@@ -31,11 +41,34 @@ function validateQuestion(question) {
 }
 app.post("/generate-question", async (req, res) => {
   try {
-const { grade, subject, topic, count } = req.body;
+    const { grade, subject, topic, count } = req.body;
+
+    console.log(req.body);
+
+
 const topicData =
   CURRICULUM.grades[grade]
     .subjects[subject]
     .topics[topic];
+
+  if (
+  grade === "1" &&
+  subject === "matematik" &&
+  LOCAL_TOPICS[topic]
+) {
+
+  console.log("YEREL SORU MOTORU ÇALIŞTI");
+
+  const questions = generateQuestions(
+    count,
+    LOCAL_TOPICS[topic]
+  );
+
+  return res.json({
+    questions
+  });
+}
+
     const outcomesText = topicData.outcomes.join("\n- ");
 
 const hintsText = topicData.promptHints.join("\n- ");
@@ -174,4 +207,5 @@ res.json({
 
 app.listen(3000, () => {
   console.log("🚀 Backend çalışıyor: http://localhost:3000");
+  
 });

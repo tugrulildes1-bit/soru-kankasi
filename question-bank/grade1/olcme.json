@@ -1,0 +1,332 @@
+[
+  {
+    "id": "measure_001",
+    "questionText": "Aşağıdakilerden hangisi daha ağırdır?",
+    "options": {
+      "A": "Tüy",
+      "B": "Fil",
+      "C": "Kağıt",
+      "D": "Balon"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "measure_002",
+    "questionText": "Aşağıdakilerden hangisi daha hafiftir?",
+    "options": {
+      "A": "Araba",
+      "B": "Kamyon",
+      "C": "Tüy",
+      "D": "Dolap"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": "measure_003",
+    "questionText": "Hangisi daha uzundur?",
+    "options": {
+      "A": "Kalem",
+      "B": "Otobüs",
+      "C": "Silgi",
+      "D": "Makas"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "measure_004",
+    "questionText": "Hangisi daha kısadır?",
+    "options": {
+      "A": "Tren",
+      "B": "Otobüs",
+      "C": "Silgi",
+      "D": "Kamyon"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": "measure_005",
+    "questionText": "Bir bardak ile bir kova karşılaştırıldığında hangisi daha fazla sıvı alır?",
+    "options": {
+      "A": "Bardak",
+      "B": "Kova",
+      "C": "İkisi eşit",
+      "D": "Bilinemez"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "measure_006",
+    "questionText": "Hangisi daha ağırdır?",
+    "options": {
+      "A": "Karpuz",
+      "B": "Üzüm",
+      "C": "Yaprak",
+      "D": "Pamuk"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "measure_007",
+    "questionText": "Hangisi daha hafiftir?",
+    "options": {
+      "A": "Fil",
+      "B": "Karınca",
+      "C": "At",
+      "D": "İnek"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "measure_008",
+    "questionText": "Hangisi daha uzundur?",
+    "options": {
+      "A": "Cetvel",
+      "B": "Silgi",
+      "C": "Ataş",
+      "D": "Kalemtıraş"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "measure_009",
+    "questionText": "Bir sürahi ile bir fincan karşılaştırıldığında hangisi daha fazla sıvı alır?",
+    "options": {
+      "A": "Fincan",
+      "B": "Sürahi",
+      "C": "İkisi eşit",
+      "D": "Bilinemez"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "measure_010",
+    "questionText": "Hangisi daha kısadır?",
+    "options": {
+      "A": "Ağaç",
+      "B": "Bina",
+      "C": "Kurşun kalem",
+      "D": "Otobüs"
+    },
+    "correctAnswer": "C"
+  },
+  {
+  "id": "measure_011",
+  "questionText": "Ali ile babası çantalarını tarttı. Babasının çantası daha ağırdır. Hangisi daha hafiftir?",
+  "options": {
+    "A": "Babasının çantası",
+    "B": "Ali'nin çantası",
+    "C": "İkisi eşittir",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "measure_012",
+  "questionText": "Bir sürahi ile bir bardak karşılaştırıldığında hangisi daha fazla sıvı alır?",
+  "options": {
+    "A": "Bardak",
+    "B": "Sürahi",
+    "C": "İkisi aynı",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "measure_013",
+  "questionText": "Bir otobüs ile bir bisiklet karşılaştırıldığında hangisi daha uzundur?",
+  "options": {
+    "A": "Bisiklet",
+    "B": "Otobüs",
+    "C": "Aynıdır",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "measure_014",
+  "questionText": "Hangisi daha ağırdır?",
+  "options": {
+    "A": "Taş",
+    "B": "Pamuk",
+    "C": "Kağıt",
+    "D": "Balon"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "measure_015",
+  "questionText": "Hangisi daha hafiftir?",
+  "options": {
+    "A": "Kamyon",
+    "B": "Araba",
+    "C": "Tüy",
+    "D": "Dolap"
+  },
+  "correctAnswer": "C"
+},
+{
+  "id": "measure_016",
+  "questionText": "Bir kova ile bir fincan karşılaştırıldığında hangisi daha çok sıvı alır?",
+  "options": {
+    "A": "Kova",
+    "B": "Fincan",
+    "C": "İkisi eşit",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "measure_017",
+  "questionText": "Kalem ile silgi karşılaştırıldığında hangisi daha uzundur?",
+  "options": {
+    "A": "Silgi",
+    "B": "Kalem",
+    "C": "İkisi aynı",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "measure_018",
+  "questionText": "Bir karpuz ile bir üzüm karşılaştırıldığında hangisi daha ağırdır?",
+  "options": {
+    "A": "Üzüm",
+    "B": "Karpuz",
+    "C": "İkisi eşit",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "measure_019",
+  "questionText": "Bir şişe ile bir kaşık karşılaştırıldığında hangisi daha fazla sıvı alır?",
+  "options": {
+    "A": "Kaşık",
+    "B": "Şişe",
+    "C": "İkisi aynı",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "measure_020",
+  "questionText": "Hangisi daha kısadır?",
+  "options": {
+    "A": "Otobüs",
+    "B": "Kamyon",
+    "C": "Kurşun kalem",
+    "D": "Tren"
+  },
+  "correctAnswer": "C"
+},
+{
+  "id": "measure_021",
+  "questionText": "Defne'nin kalemi, silgisinden daha uzundur. Hangisi daha kısadır?",
+  "options": {
+    "A": "Kalem",
+    "B": "Silgi",
+    "C": "İkisi aynı",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "measure_022",
+  "questionText": "Bir tencere ile bir bardak karşılaştırıldığında hangisi daha fazla su alır?",
+  "options": {
+    "A": "Tencere",
+    "B": "Bardak",
+    "C": "İkisi aynı",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "measure_023",
+  "questionText": "Hangisi daha hafiftir?",
+  "options": {
+    "A": "Karınca",
+    "B": "Fil",
+    "C": "At",
+    "D": "İnek"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "measure_024",
+  "questionText": "Bir cetvel ile bir ataş karşılaştırıldığında hangisi daha uzundur?",
+  "options": {
+    "A": "Cetvel",
+    "B": "Ataş",
+    "C": "İkisi aynı",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "measure_025",
+  "questionText": "Bir çanta ile bir kitap karşılaştırıldığında hangisi daha ağır olabilir?",
+  "options": {
+    "A": "Çanta",
+    "B": "Kitap",
+    "C": "İkisi aynı",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "measure_026",
+  "questionText": "Hangisi daha fazla sıvı alır?",
+  "options": {
+    "A": "Kase",
+    "B": "Kaşık",
+    "C": "İkisi aynı",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "measure_027",
+  "questionText": "Hangisi daha uzundur?",
+  "options": {
+    "A": "Kalemtıraş",
+    "B": "Silgi",
+    "C": "Cetvel",
+    "D": "Ataş"
+  },
+  "correctAnswer": "C"
+},
+{
+  "id": "measure_028",
+  "questionText": "Bir valiz ile bir oyuncak araba karşılaştırıldığında hangisi daha ağırdır?",
+  "options": {
+    "A": "Oyuncak araba",
+    "B": "Valiz",
+    "C": "İkisi aynı",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "measure_029",
+  "questionText": "Hangisi daha hafiftir?",
+  "options": {
+    "A": "Yaprak",
+    "B": "Taş",
+    "C": "Masa",
+    "D": "Dolap"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "measure_030",
+  "questionText": "Bir sürahi ile bir çay kaşığı karşılaştırıldığında hangisi daha fazla sıvı alır?",
+  "options": {
+    "A": "Çay kaşığı",
+    "B": "Sürahi",
+    "C": "İkisi aynı",
+    "D": "Bilinemez"
+  },
+  "correctAnswer": "B"
+}
+]

@@ -77,5 +77,95 @@
       "max": 10
     }
 }
+},
+{
+  "id": "add_006",
+  "template": "{name} isimli öğrencinin {a} oyuncağı vardı. Babası ona {b} oyuncak daha aldı. Toplam kaç oyuncağı oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": { "min": 1, "max": 10 },
+    "b": { "min": 1, "max": 10 }
+  }
+},
+{
+  "id": "add_007",
+  "template": "Bir bahçede {a} papatya çiçeği vardı. Bahçeye {b} çiçek daha ekildi. Bahçede toplam kaç papatya çiçeği oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": { "min": 1, "max": 10 },
+    "b": { "min": 1, "max": 10 }
+  }
+},
+{
+  "id": "add_008",
+  "template": "{name} isimli öğrencinin {a} çıkartması vardı. Arkadaşı ona {b} çıkartma daha verdi. Toplam kaç çıkartması oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": { "min": 1, "max": 10 },
+    "b": { "min": 1, "max": 10 }
+  }
+},
+{
+  "id": "add_009",
+  "template": "{name}'in {a} çikolatası vardı. Annesi {b} çikolata daha verdi. Toplam kaç çikolatası oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": { "min": 1, "max": 10 },
+    "b": { "min": 1, "max": 10 }
+  }
+},
+{
+  "id": "add_010",
+  "template": "Sahnede {a} balerin vardı. Sahneye {b} balerin daha geldi. Sahnede toplam kaç balerin oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": { "min": 1, "max": 10 },
+    "b": { "min": 1, "max": 10 }
+  }
+},
+{
+  "id": "add_011",
+  "template": "Bir futbol sahasında {a} futbolcu vardı. Sahaya {b} futbolcu daha geldi. Sahada toplam kaç futbolcu oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": { "min": 1, "max": 10 },
+    "b": { "min": 1, "max": 10 }
+  }
+},
+{
+  "id": "add_012",
+  "template": "Bir kırtasiyede {a} silgi vardı. Kırtasiyeye {b} silgi daha geldi. Kırtasiyede toplam kaç silgisi oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": { "min": 1, "max": 10 },
+    "b": { "min": 1, "max": 10 }
+  }
+},
+{
+  "id": "add_013",
+  "template": "{name}'nin cebinde {a} cevizi vardı. Dedesi ona {b} ceviz verdi. Toplam kaç cevizi oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": { "min": 1, "max": 10 },
+    "b": { "min": 1, "max": 10 }
+  }
+},
+{
+  "id": "add_014",
+  "template": "Garajda {a} araba vardı. Garaja {b} araba daha park etti. Garajda toplam kaç araba oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": { "min": 1, "max": 10 },
+    "b": { "min": 1, "max": 10 }
+  }
+},
+{
+  "id": "add_015",
+  "template": "Tabakta {a} kurabiye var. {name} {b} kurabiye daha yaptı. Tabakta toplam kaç kurabiye oldu?",
+  "validatorType": "addition",
+  "variables": {
+    "a": { "min": 1, "max": 10 },
+    "b": { "min": 1, "max": 10 }
+  }
 }
 ]

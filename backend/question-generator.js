@@ -14,7 +14,7 @@ const NAMES = [
   "Kerem",
   "Furkan",
   "Recep",
-  "Can"
+  "Özge"
 ];
 
 function getRandomName() {
@@ -25,27 +25,36 @@ function shuffleArray(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 
-function loadTemplates() {
-  const filePath = path.join(
-    __dirname,
-    "..",
-    "question-bank",
-    "grade1",
-    "toplama.json"
-  );
+function loadTemplates(fileName) {
+ const filePath = path.join(
+  __dirname,
+  "..",
+  "question-bank",
+  "grade1",
+  fileName
+);
 
   const rawData = fs.readFileSync(filePath, "utf8");
   return JSON.parse(rawData);
 }
 
-function generateQuestion() {
-  const templates = loadTemplates();
+function generateQuestion(fileName) {
+  const templates = loadTemplates(fileName);
 
   const template =
     templates[Math.floor(Math.random() * templates.length)];
 
   console.log("\nSEÇİLEN TEMPLATE:");
   console.log(template.id);
+
+  // Kavram soruları
+  if (!template.variables) {
+    return {
+      questionText: template.questionText,
+      options: template.options,
+      correctAnswer: template.correctAnswer
+    };
+  }
 
   const a = getRandomNumber(
     template.variables.a.min,
@@ -65,7 +74,17 @@ function generateQuestion() {
   questionText = questionText.replace("{a}", a);
   questionText = questionText.replace("{b}", b);
 
-  const correctAnswer = a + b;
+  let correctAnswer;
+
+  if (template.validatorType === "subtraction") {
+    correctAnswer = a - b;
+  }
+  else if (template.validatorType === "multiplication") {
+    correctAnswer = a * b;
+  }
+  else {
+    correctAnswer = a + b;
+  }
 
   const options = [
     correctAnswer,
@@ -95,17 +114,18 @@ function generateQuestion() {
   };
 }
 
-function generateQuestions(count) {
+function generateQuestions(count, fileName) {
   const questions = [];
 
   for (let i = 0; i < count; i++) {
-    questions.push(generateQuestion());
+    questions.push(
+      generateQuestion(fileName)
+    );
   }
 
   return questions;
 }
 
-const questions = generateQuestions(5);
-
-console.log("\nOLUŞTURULAN TEST:");
-console.log(JSON.stringify(questions, null, 2));
+module.exports = {
+  generateQuestions
+};

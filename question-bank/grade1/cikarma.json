@@ -1,0 +1,137 @@
+[
+  {
+  "id": "sub_001",
+  "template": "{name} isimli öğrencinin {a} elması vardı. Babası {b} elmasını yedi. Geriye kaç elması kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_002",
+  "template": "{name} isimli öğrencinin {a} kitabı vardı. {b} kitabını kardeşine verdi. Geriye kaç kitabı kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_003",
+  "template": "{name} isimli öğrencinin {a} balonu vardı. {b} balonu patladı. Geriye kaç balonu kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_004",
+  "template": "{name} isimli öğrencinin {a} misketi vardı. {b} misketini kaybetti. Geriye kaç misketi kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_005",
+  "template": "{name} isimli öğrencinin {a} kalemi vardı. {b} kalemini arkadaşına verdi. Geriye kaç kalemi kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_006",
+  "template": "{name} isimli öğrencinin {a} oyuncağı vardı. {b} oyuncağını kardeşine verdi. Geriye kaç oyuncağı kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_007",
+  "template": "Bir bahçede {a} papatya vardı. {b} papatya soldu. Bahçede kaç papatya kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_008",
+  "template": "{name} isimli öğrencinin {a} çıkartması vardı. {b} çıkartmasını arkadaşına verdi. Geriye kaç çıkartması kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_009",
+  "template": "{name}'in {a} çikolatası vardı. {b} çikolatasını yedi. Geriye kaç çikolatası kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_010",
+  "template": "Sahnede {a} balerin vardı. {b} balerin sahneden ayrıldı. Sahnede kaç balerin kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_011",
+  "template": "Bir futbol sahasında {a} futbolcu vardı. {b} futbolcu oyundan çıktı. Sahada kaç futbolcu kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_012",
+  "template": "Bir kırtasiyede {a} silgi vardı. {b} silgi satıldı. Kırtasiyede kaç silgi kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_013",
+  "template": "{name}'nin cebinde {a} cevizi vardı. {b} cevizini yedi. Geriye kaç cevizi kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_014",
+  "template": "Garajda {a} araba vardı. {b} araba garajdan çıktı. Garajda kaç araba kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+},
+{
+  "id": "sub_015",
+  "template": "Tabakta {a} kurabiye vardı. {name} {b} kurabiyeyi yedi. Tabakta kaç kurabiye kaldı?",
+  "validatorType": "subtraction",
+  "variables": {
+    "a": { "min": 10, "max": 20 },
+    "b": { "min": 1, "max": 9 }
+  }
+}
+]

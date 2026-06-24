@@ -1,0 +1,92 @@
+[
+  {
+    "id": "time_001",
+    "template": "{name} saat {a}'de uyandı. {b} saat sonra saat kaç oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 10 },
+      "b": { "min": 1, "max": 2 }
+    }
+  },
+  {
+    "id": "time_002",
+    "template": "{name} saat {a}'de derse başladı. Ders {b} saat sürdü. Ders saat kaçta bitti?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 10 },
+      "b": { "min": 1, "max": 2 }
+    }
+  },
+  {
+    "id": "time_003",
+    "template": "{name} saat {a}'de oyun oynamaya başladı. {b} saat sonra oyunu bıraktı. Saat kaç oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 10 },
+      "b": { "min": 1, "max": 2 }
+    }
+  },
+  {
+    "id": "time_004",
+    "template": "{name} saat {a}'de kahvaltı yaptı. {b} saat sonra parka gitti. Saat kaç oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 10 },
+      "b": { "min": 1, "max": 2 }
+    }
+  },
+  {
+    "id": "time_005",
+    "template": "{name} saat {a}'de okula gitti. {b} saat sonra eve döndü. Eve geldiğinde saat kaçtı?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 10 },
+      "b": { "min": 1, "max": 2 }
+    }
+  },
+  {
+    "id": "time_006",
+    "template": "Saat {a}'de başlayan çizgi film {b} saat sürdü. Çizgi film saat kaçta bitti?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 10 },
+      "b": { "min": 1, "max": 2 }
+    }
+  },
+  {
+    "id": "time_007",
+    "template": "{name} saat {a}'de kitap okumaya başladı. {b} saat sonra kitabı bıraktı. Saat kaç oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 10 },
+      "b": { "min": 1, "max": 2 }
+    }
+  },
+  {
+    "id": "time_008",
+    "template": "{name} saat {a}'de arkadaşına gitti. {b} saat sonra eve döndü. Saat kaç oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 10 },
+      "b": { "min": 1, "max": 2 }
+    }
+  },
+  {
+    "id": "time_009",
+    "template": "{name} saat {a}'de bahçeye çıktı. {b} saat sonra içeri girdi. Saat kaç oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 10 },
+      "b": { "min": 1, "max": 2 }
+    }
+  },
+  {
+    "id": "time_010",
+    "template": "{name} saat {a}'de ödev yapmaya başladı. {b} saat sonra ödevi bitirdi. Saat kaç oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 10 },
+      "b": { "min": 1, "max": 2 }
+    }
+  }
+]

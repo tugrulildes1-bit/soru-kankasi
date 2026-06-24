@@ -1,0 +1,92 @@
+[
+  {
+    "id": "length_001",
+    "template": "{name} isimli öğrencinin kalemi {a} cm uzunluğundadır. Kardeşinin kalemi {b} cm daha uzundur. Kardeşinin kalemi kaç cm'dir?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 15 },
+      "b": { "min": 1, "max": 10 }
+    }
+  },
+  {
+    "id": "length_002",
+    "template": "{name}'nin cetveli {a} cm'dir. Babası ona {b} cm daha uzun bir cetvel verdi. Yeni cetvel kaç cm oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 15 },
+      "b": { "min": 1, "max": 10 }
+    }
+  },
+  {
+    "id": "length_003",
+    "template": "Bir ipin uzunluğu {a} cm'dir. İpe {b} cm daha eklendi. Yeni uzunluk kaç cm oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 15 },
+      "b": { "min": 1, "max": 10 }
+    }
+  },
+  {
+    "id": "length_004",
+    "template": "{name}'nin boyu {a} cm'dir. Kardeşi {b} cm daha uzundur. Kardeşinin boyu kaç cm'dir?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 50, "max": 100 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "length_005",
+    "template": "Bir masanın uzunluğu {a} cm'dir. Yanına {b} cm daha uzunluk eklendi. Toplam uzunluk kaç cm oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 10, "max": 50 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "length_006",
+    "template": "{name} {a} cm ip ölçtü. Sonra {b} cm daha ölçtü. Toplam kaç cm ölçmüş oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "length_007",
+    "template": "Bir tahta parçası {a} cm'dir. Yanına {b} cm daha eklendi. Toplam uzunluk kaç cm oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 5, "max": 30 },
+      "b": { "min": 1, "max": 15 }
+    }
+  },
+  {
+    "id": "length_008",
+    "template": "{name}'nin oyuncağı {a} cm'dir. Arkadaşının oyuncağı {b} cm daha uzundur. Arkadaşının oyuncağı kaç cm'dir?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 5, "max": 20 },
+      "b": { "min": 1, "max": 10 }
+    }
+  },
+  {
+    "id": "length_009",
+    "template": "{name} {a} cm kurdele kullandı. {b} cm daha kullandı. Toplam kaç cm kurdele kullanmış oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 5, "max": 20 },
+      "b": { "min": 1, "max": 15 }
+    }
+  },
+  {
+    "id": "length_010",
+    "template": "Bir yolun uzunluğu {a} cm olarak ölçüldü. {b} cm daha eklendi. Yeni uzunluk kaç cm oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 10, "max": 50 },
+      "b": { "min": 1, "max": 20 }
+    }
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "money_001",
+    "template": "{name} isimli öğrencinin {a} TL'si vardı. Annesi ona {b} TL daha verdi. Toplam kaç TL'si oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "money_002",
+    "template": "{name}'nin kumbarasında {a} TL vardı. Kumbaraya {b} TL attı. Kumbarasında toplam kaç TL oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "money_003",
+    "template": "{name}, {a} TL'lik kalem ve {b} TL'lik silgi aldı. Toplam kaç TL ödedi?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "money_004",
+    "template": "{name}'nin cebinde {a} TL vardı. Abisi ona {b} TL daha verdi. Toplam kaç TL'si oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "money_005",
+    "template": "Bir oyuncak {a} TL, bir kitap {b} TL'dir. İkisini alan biri toplam kaç TL öder?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "money_006",
+    "template": "{name}, {a} TL harçlık aldı. Daha sonra babasından {b} TL daha aldı. Toplam kaç TL harçlığı oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "money_007",
+    "template": "{name}'nin cüzdanında {a} TL vardı. Cüzdanına, {b} TL daha ekledi. Toplam kaç TL oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "money_008",
+    "template": "{name}, {a} TL'lik meyve ve {b} TL'lik süt aldı. Toplam kaç TL ödedi?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "money_009",
+    "template": "{name}'nin {a} TL'si vardı. Teyzesi ona {b} TL verdi. Toplam kaç TL'si oldu?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  },
+  {
+    "id": "money_010",
+    "template": "{name}, {a} TL ve {b} TL fiyatında iki oyuncak satın aldı. Toplam kaç TL ödemesi gerekir?",
+    "validatorType": "addition",
+    "variables": {
+      "a": { "min": 1, "max": 20 },
+      "b": { "min": 1, "max": 20 }
+    }
+  }
+]
