@@ -1,92 +1,332 @@
 [
   {
     "id": "time_001",
-    "template": "{name} saat {a}'de uyandı. {b} saat sonra saat kaç oldu?",
-    "validatorType": "addition",
-    "variables": {
-      "a": { "min": 1, "max": 10 },
-      "b": { "min": 1, "max": 2 }
-    }
+    "questionText": "Kahvaltı genellikle hangi vakitte yapılır?",
+    "options": {
+      "A": "Sabah",
+      "B": "Akşam",
+      "C": "Gece",
+      "D": "Öğle"
+    },
+    "correctAnswer": "A"
   },
   {
     "id": "time_002",
-    "template": "{name} saat {a}'de derse başladı. Ders {b} saat sürdü. Ders saat kaçta bitti?",
-    "validatorType": "addition",
-    "variables": {
-      "a": { "min": 1, "max": 10 },
-      "b": { "min": 1, "max": 2 }
-    }
+    "questionText": "Uyumadan önce genellikle hangi zaman dilimi yaşanır?",
+    "options": {
+      "A": "Sabah",
+      "B": "Öğle",
+      "C": "Akşam",
+      "D": "Sabah erken"
+    },
+    "correctAnswer": "C"
   },
   {
     "id": "time_003",
-    "template": "{name} saat {a}'de oyun oynamaya başladı. {b} saat sonra oyunu bıraktı. Saat kaç oldu?",
-    "validatorType": "addition",
-    "variables": {
-      "a": { "min": 1, "max": 10 },
-      "b": { "min": 1, "max": 2 }
-    }
+    "questionText": "Öğle yemeği genellikle hangi vakitte yenir?",
+    "options": {
+      "A": "Sabah",
+      "B": "Öğle",
+      "C": "Gece",
+      "D": "Akşam"
+    },
+    "correctAnswer": "B"
   },
   {
     "id": "time_004",
-    "template": "{name} saat {a}'de kahvaltı yaptı. {b} saat sonra parka gitti. Saat kaç oldu?",
-    "validatorType": "addition",
-    "variables": {
-      "a": { "min": 1, "max": 10 },
-      "b": { "min": 1, "max": 2 }
-    }
+    "questionText": "Saat 3:00 aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Tam saat",
+      "B": "Yarım saat",
+      "C": "Çeyrek saat",
+      "D": "Gece vakti"
+    },
+    "correctAnswer": "A"
   },
   {
     "id": "time_005",
-    "template": "{name} saat {a}'de okula gitti. {b} saat sonra eve döndü. Eve geldiğinde saat kaçtı?",
-    "validatorType": "addition",
-    "variables": {
-      "a": { "min": 1, "max": 10 },
-      "b": { "min": 1, "max": 2 }
-    }
+    "questionText": "Saat 7:30 aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Tam saat",
+      "B": "Yarım saat",
+      "C": "Çeyrek saat",
+      "D": "Sabah vakti"
+    },
+    "correctAnswer": "B"
   },
   {
     "id": "time_006",
-    "template": "Saat {a}'de başlayan çizgi film {b} saat sürdü. Çizgi film saat kaçta bitti?",
-    "validatorType": "addition",
-    "variables": {
-      "a": { "min": 1, "max": 10 },
-      "b": { "min": 1, "max": 2 }
-    }
+    "questionText": "Okula genellikle hangi vakitte gidilir?",
+    "options": {
+      "A": "Sabah",
+      "B": "Gece",
+      "C": "Akşam",
+      "D": "Gece yarısı"
+    },
+    "correctAnswer": "A"
   },
   {
     "id": "time_007",
-    "template": "{name} saat {a}'de kitap okumaya başladı. {b} saat sonra kitabı bıraktı. Saat kaç oldu?",
-    "validatorType": "addition",
-    "variables": {
-      "a": { "min": 1, "max": 10 },
-      "b": { "min": 1, "max": 2 }
-    }
+    "questionText": "Akşam yemeği hangi zaman diliminde yenir?",
+    "options": {
+      "A": "Sabah",
+      "B": "Öğle",
+      "C": "Akşam",
+      "D": "Gece"
+    },
+    "correctAnswer": "C"
   },
   {
     "id": "time_008",
-    "template": "{name} saat {a}'de arkadaşına gitti. {b} saat sonra eve döndü. Saat kaç oldu?",
-    "validatorType": "addition",
-    "variables": {
-      "a": { "min": 1, "max": 10 },
-      "b": { "min": 1, "max": 2 }
-    }
+    "questionText": "Aşağıdakilerden hangisi bir tam saattir?",
+    "options": {
+      "A": "5:30",
+      "B": "8:30",
+      "C": "9:00",
+      "D": "6:30"
+    },
+    "correctAnswer": "C"
   },
   {
     "id": "time_009",
-    "template": "{name} saat {a}'de bahçeye çıktı. {b} saat sonra içeri girdi. Saat kaç oldu?",
-    "validatorType": "addition",
-    "variables": {
-      "a": { "min": 1, "max": 10 },
-      "b": { "min": 1, "max": 2 }
-    }
+    "questionText": "Aşağıdakilerden hangisi bir yarım saattir?",
+    "options": {
+      "A": "3:00",
+      "B": "4:00",
+      "C": "6:30",
+      "D": "8:00"
+    },
+    "correctAnswer": "C"
   },
   {
     "id": "time_010",
-    "template": "{name} saat {a}'de ödev yapmaya başladı. {b} saat sonra ödevi bitirdi. Saat kaç oldu?",
-    "validatorType": "addition",
-    "variables": {
-      "a": { "min": 1, "max": 10 },
-      "b": { "min": 1, "max": 2 }
-    }
-  }
+    "questionText": "Gece uyuduktan sonra hangi zaman dilimi gelir?",
+    "options": {
+      "A": "Akşam",
+      "B": "Sabah",
+      "C": "Öğle",
+      "D": "Gece"
+    },
+    "correctAnswer": "B"
+  },
+  {
+  "id": "time_011",
+  "questionText": "Dişler genellikle hangi vakitte fırçalanır?",
+  "options": {
+    "A": "Sabah ve akşam",
+    "B": "Sadece öğle",
+    "C": "Gece yarısı",
+    "D": "Sadece öğleden sonra"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "time_012",
+  "questionText": "Saat 8:00 aşağıdakilerden hangisidir?",
+  "options": {
+    "A": "Yarım saat",
+    "B": "Tam saat",
+    "C": "Çeyrek saat",
+    "D": "Gece vakti"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "time_013",
+  "questionText": "Saat 2:30 aşağıdakilerden hangisidir?",
+  "options": {
+    "A": "Tam saat",
+    "B": "Yarım saat",
+    "C": "Sabah",
+    "D": "Gece"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "time_014",
+  "questionText": "Akşamdan sonra hangi zaman dilimi gelir?",
+  "options": {
+    "A": "Sabah",
+    "B": "Öğle",
+    "C": "Gece",
+    "D": "İkindi"
+  },
+  "correctAnswer": "C"
+},
+{
+  "id": "time_015",
+  "questionText": "Sabah kalktıktan sonra genellikle ilk ne yapılır?",
+  "options": {
+    "A": "Uyunur",
+    "B": "Kahvaltı yapılır",
+    "C": "Akşam yemeği yenir",
+    "D": "Gece uyunur"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "time_016",
+  "questionText": "Hangisi yarım saati gösterir?",
+  "options": {
+    "A": "7:30",
+    "B": "5:00",
+    "C": "9:00",
+    "D": "12:00"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "time_017",
+  "questionText": "Hangisi tam saati gösterir?",
+  "options": {
+    "A": "4:30",
+    "B": "10:30",
+    "C": "6:00",
+    "D": "1:30"
+  },
+  "correctAnswer": "C"
+},
+{
+  "id": "time_018",
+  "questionText": "Öğle yemeğinden sonra hangi zaman dilimi yaşanır?",
+  "options": {
+    "A": "Sabah",
+    "B": "Gece",
+    "C": "Öğleden sonra",
+    "D": "Akşam"
+  },
+  "correctAnswer": "C"
+},
+{
+  "id": "time_019",
+  "questionText": "Aşağıdakilerden hangisi gece yapılır?",
+  "options": {
+    "A": "Okula gitmek",
+    "B": "Kahvaltı yapmak",
+    "C": "Uyumak",
+    "D": "Öğle yemeği yemek"
+  },
+  "correctAnswer": "C"
+},
+{
+  "id": "time_020",
+  "questionText": "Saat 11:00 aşağıdakilerden hangisidir?",
+  "options": {
+    "A": "Yarım saat",
+    "B": "Tam saat",
+    "C": "Çeyrek saat",
+    "D": "Akşam"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "time_021",
+  "questionText": "Saat 9:30 aşağıdakilerden hangisidir?",
+  "options": {
+    "A": "Tam saat",
+    "B": "Yarım saat",
+    "C": "Gece",
+    "D": "Sabah"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "time_022",
+  "questionText": "Sabah ile öğle arasında hangi zaman dilimi vardır?",
+  "options": {
+    "A": "Akşam",
+    "B": "Gece",
+    "C": "Sabah saatleri",
+    "D": "Gece yarısı"
+  },
+  "correctAnswer": "C"
+},
+{
+  "id": "time_023",
+  "questionText": "Okuldan sonra genellikle hangi zaman dilimi yaşanır?",
+  "options": {
+    "A": "Sabah",
+    "B": "Öğleden sonra",
+    "C": "Gece",
+    "D": "Sabah erken"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "time_024",
+  "questionText": "Hangisi günün bir bölümüdür?",
+  "options": {
+    "A": "Sabah",
+    "B": "Kalem",
+    "C": "Masa",
+    "D": "Defter"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "time_025",
+  "questionText": "Akşam yemeği genellikle hangi vakitte yenir?",
+  "options": {
+    "A": "Sabah",
+    "B": "Öğle",
+    "C": "Akşam",
+    "D": "Gece yarısı"
+  },
+  "correctAnswer": "C"
+},
+{
+  "id": "time_026",
+  "questionText": "Saat 1:00 aşağıdakilerden hangisidir?",
+  "options": {
+    "A": "Tam saat",
+    "B": "Yarım saat",
+    "C": "Çeyrek saat",
+    "D": "Gece"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "time_027",
+  "questionText": "Hangisi yarım saattir?",
+  "options": {
+    "A": "12:00",
+    "B": "5:30",
+    "C": "7:00",
+    "D": "9:00"
+  },
+  "correctAnswer": "B"
+},
+{
+  "id": "time_028",
+  "questionText": "Gece uyuduktan sonra hangi zaman dilimi gelir?",
+  "options": {
+    "A": "Sabah",
+    "B": "Akşam",
+    "C": "Gece",
+    "D": "Öğle"
+  },
+  "correctAnswer": "A"
+},
+{
+  "id": "time_029",
+  "questionText": "Bir günün ilk bölümü hangisidir?",
+  "options": {
+    "A": "Gece",
+    "B": "Akşam",
+    "C": "Sabah",
+    "D": "Öğle"
+  },
+  "correctAnswer": "C"
+},
+{
+  "id": "time_030",
+  "questionText": "Hangisi tam saattir?",
+  "options": {
+    "A": "8:30",
+    "B": "10:00",
+    "C": "2:30",
+    "D": "7:30"
+  },
+  "correctAnswer": "B"
+}
 ]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "space_001",
+    "scene": "🪑\n🐈",
+    "questionText": "Kedi sandalyenin neresindedir?",
+    "options": {
+      "A": "Altında",
+      "B": "Üstünde",
+      "C": "Yanında",
+      "D": "İçinde"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "space_002",
+    "scene": "🐈\n🪑",
+    "questionText": "Kedi sandalyenin neresindedir?",
+    "options": {
+      "A": "Altında",
+      "B": "Üstünde",
+      "C": "İçinde",
+      "D": "Arkasında"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "space_003",
+    "scene": "📦⚽",
+    "questionText": "Top kutunun neresindedir?",
+    "options": {
+      "A": "İçinde",
+      "B": "Altında",
+      "C": "Üstünde",
+      "D": "Arkasında"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "space_004",
+    "scene": "⚽📦",
+    "questionText": "Top kutunun neresindedir?",
+    "options": {
+      "A": "İçinde",
+      "B": "Dışında",
+      "C": "Üstünde",
+      "D": "Altında"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "space_005",
+    "scene": "🚗 🌳",
+    "questionText": "Araba ağacın neresindedir?",
+    "options": {
+      "A": "Solunda",
+      "B": "Üstünde",
+      "C": "İçinde",
+      "D": "Altında"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "space_006",
+    "scene": "🌳 🚗",
+    "questionText": "Araba ağacın neresindedir?",
+    "options": {
+      "A": "Sağında",
+      "B": "Altında",
+      "C": "İçinde",
+      "D": "Üstünde"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "space_007",
+    "scene": "🐦\n🌳",
+    "questionText": "Kuş ağacın neresindedir?",
+    "options": {
+      "A": "Altında",
+      "B": "Üstünde",
+      "C": "Yanında",
+      "D": "İçinde"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "space_008",
+    "scene": "🌳\n🐦",
+    "questionText": "Kuş ağacın neresindedir?",
+    "options": {
+      "A": "Üstünde",
+      "B": "Altında",
+      "C": "İçinde",
+      "D": "Arkasında"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "space_009",
+    "scene": "👦 ⚽ 👧",
+    "questionText": "Top çocukların neresindedir?",
+    "options": {
+      "A": "Arasında",
+      "B": "Üstünde",
+      "C": "Altında",
+      "D": "Dışında"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "space_010",
+    "scene": "📚\n🪑",
+    "questionText": "Kitap sandalyenin neresindedir?",
+    "options": {
+      "A": "Altında",
+      "B": "Üstünde",
+      "C": "Yanında",
+      "D": "Arkasında"
+    },
+    "correctAnswer": "B"
+  }
+]

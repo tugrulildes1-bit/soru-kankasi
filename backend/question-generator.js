@@ -49,12 +49,13 @@ function generateQuestion(fileName) {
 
   // Kavram soruları
   if (!template.variables) {
-    return {
-      questionText: template.questionText,
-      options: template.options,
-      correctAnswer: template.correctAnswer
-    };
-  }
+  return {
+    scene: template.scene,
+    questionText: template.questionText,
+    options: template.options,
+    correctAnswer: template.correctAnswer
+  };
+}
 
   const a = getRandomNumber(
     template.variables.a.min,

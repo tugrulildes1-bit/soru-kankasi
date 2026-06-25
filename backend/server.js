@@ -22,7 +22,9 @@ const LOCAL_TOPICS = {
   "cikarma-islemi": "cikarma.json",
   "para": "paralarimiz.json",
   "uzunluk-olcme": "uzunluk-olcme.json",
-  "olcme": "olcme.json"
+  "olcme": "olcme.json",
+  "geometrik-sekiller": "geometrik-sekiller.json",
+  "uzamsal-iliskiler": "uzamsal-iliskiler.json"
 };
 function validateQuestion(question) {
   try {

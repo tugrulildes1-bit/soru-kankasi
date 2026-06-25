@@ -1,0 +1,167 @@
+[
+  {
+    "id": "shape_001",
+    "questionText": "Hangi şeklin 3 köşesi vardır?",
+    "options": {
+      "A": "Kare",
+      "B": "Üçgen",
+      "C": "Daire",
+      "D": "Dikdörtgen"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "shape_002",
+    "questionText": "Hangi şeklin köşesi yoktur?",
+    "options": {
+      "A": "Üçgen",
+      "B": "Kare",
+      "C": "Daire",
+      "D": "Dikdörtgen"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": "shape_003",
+    "questionText": "Hangi şeklin 4 eşit kenarı vardır?",
+    "options": {
+      "A": "Kare",
+      "B": "Üçgen",
+      "C": "Daire",
+      "D": "Dikdörtgen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "shape_004",
+    "questionText": "Aşağıdakilerden hangisi yuvarlaktır?",
+    "options": {
+      "A": "Daire",
+      "B": "Üçgen",
+      "C": "Kare",
+      "D": "Dikdörtgen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "shape_005",
+    "questionText": "Bir pencere en çok hangi şekle benzer?",
+    "options": {
+      "A": "Üçgen",
+      "B": "Daire",
+      "C": "Dikdörtgen",
+      "D": "Yıldız"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": "shape_006",
+    "questionText": "Bir saat en çok hangi şekle benzer?",
+    "options": {
+      "A": "Daire",
+      "B": "Kare",
+      "C": "Üçgen",
+      "D": "Dikdörtgen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "shape_007",
+    "questionText": "Bir trafik levhası üçgen şeklindeyse hangi şekli görürüz?",
+    "options": {
+      "A": "Kare",
+      "B": "Daire",
+      "C": "Üçgen",
+      "D": "Dikdörtgen"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": "shape_008",
+    "questionText": "Hangi şeklin 4 köşesi vardır?",
+    "options": {
+      "A": "Daire",
+      "B": "Kare",
+      "C": "Üçgen",
+      "D": "Çember"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "shape_009",
+    "questionText": "Bir futbol topu hangi şekle daha çok benzer?",
+    "options": {
+      "A": "Üçgen",
+      "B": "Daire",
+      "C": "Kare",
+      "D": "Dikdörtgen"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "shape_010",
+    "questionText": "Aşağıdakilerden hangisi 3 kenarlıdır?",
+    "options": {
+      "A": "Kare",
+      "B": "Üçgen",
+      "C": "Daire",
+      "D": "Dikdörtgen"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "shape_011",
+    "questionText": "Kapı en çok hangi şekle benzer?",
+    "options": {
+      "A": "Dikdörtgen",
+      "B": "Daire",
+      "C": "Üçgen",
+      "D": "Kare"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": "shape_012",
+    "questionText": "Bir pizza hangi şekle benzer?",
+    "options": {
+      "A": "Kare",
+      "B": "Üçgen",
+      "C": "Daire",
+      "D": "Dikdörtgen"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": "shape_013",
+    "questionText": "Hangi şeklin köşesi bulunmaz?",
+    "options": {
+      "A": "Kare",
+      "B": "Üçgen",
+      "C": "Dikdörtgen",
+      "D": "Daire"
+    },
+    "correctAnswer": "D"
+  },
+  {
+    "id": "shape_014",
+    "questionText": "Üçgenin kaç köşesi vardır?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": "shape_015",
+    "questionText": "Karenin kaç köşesi vardır?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "correctAnswer": "C"
+  }
+]

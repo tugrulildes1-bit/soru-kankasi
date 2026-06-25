@@ -50,6 +50,12 @@ export class QuizComponent {
   </div>
 </div>
 
+${question.scene ? `
+<div class="scene-container">
+  ${question.scene.replace(/\n/g, "<br>")}
+</div>
+` : ""}
+
         <h2 class="question-text">${question.questionText}</h2>
         <div class="options-container" id="options-container">
           ${Object.keys(question.options).map(key => `
